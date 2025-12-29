@@ -3,7 +3,7 @@ title: "Onchain Oracles: The Future of NFTs with SuperRare's John Crain"
 date: 2025-12-10
 hosts: ["Bob Summerwill", "Victor Wong", "Kieren James-Lubin", "Michael Tan"]
 guests: ["John Crain"]
-description: "Interview with <a href='https://x.com/SuperRareJohn'>John Crain</a>"
+description: "Interview with <a href='https://x.com/SuperRareJohn'>John Crain</a>, founder of <a href='https://superrare.com/'>SuperRare</a>, on the future of NFTs and onchain provenance—covering curation vs. decentralization, token/DAO governance lessons, AI’s impact on art and authenticity, and why Bitcoin Ordinals/onchain data matter."
 embed:
   url: https://www.youtube.com/embed/mqStnmOwuR0
 img: /images/covers-for-spaces/onchain-oracles-the-future-of-nfts-with-superrares-john-crain.png
