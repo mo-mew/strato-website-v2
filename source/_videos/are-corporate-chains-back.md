@@ -100,7 +100,7 @@ Yeah, well, I mean, you know, the red hot action at the moment is really about [
 {% include content-embed.html
   url='https://tempo.xyz/launch-announcement'
   title='Introducing Tempo, the payments-first blockchain'
-  img='https://www.ledgerinsights.com/wp-content/uploads/2022/10/stripe-810x524.jpg'
+  img='/images/www.ledgerinsights.com/2026.01.05/wp-content/uploads/2022/10/stripe-810x524.jpg'
   date="2025-09-04"
   author='Matt Huang'
 %}
@@ -155,7 +155,7 @@ Well, and to be clear, also, I think we've been talking about [Tempo](https://te
 {% include content-embed.html
   url='https://robinhood.com/us/en/newsroom/robinhood-launches-stock-tokens-reveals-layer-2-blockchain-and-expands-crypto-suite-in-eu-and-us-with-perpetual-futures-and-staking/'
   title='Robinhood Launches Stock Tokens, Reveals Layer 2 Blockchain and Expands Crypto Suite in EU and US with Perpetual Futures and Staking'
-  img='https://images.ctfassets.net/1hpl803w8xsv/4E2tROkP97kCBGUCTab40e/66763abe1c8e79fb57b3d7e935c1dc3b/Crypto-Event_BlogHeader.webp'
+  img='/images/images.ctfassets.net/2026.01.05/1hpl803w8xsv/4E2tROkP97kCBGUCTab40e/66763abe1c8e79fb57b3d7e935c1dc3b/Crypto-Event_BlogHeader.webp'
   date="2025-06-30"
 %}
 
@@ -172,7 +172,7 @@ They've sort of talked about various bits on that. [Circle](https://circle.com/)
 {% include content-embed.html
   url='https://www.circle.com/blog/introducing-arc-an-open-layer-1-blockchain-purpose-built-for-stablecoin-finance'
   title='Introducing Arc: An Open Layer-1 Blockchain Purpose-Built for Stablecoin Finance'
-  img='https://cdn.prod.website-files.com/67116d0daddc92483c812ead/68961fad0ee4f552ba5641e3_Blog_Arc-launch-p-1080.jpg'
+  img='/images/cdn.prod.website-files.com/2026.01.05/67116d0daddc92483c812ead/68961fad0ee4f552ba5641e3_Blog_Arc-launch-p-1080.jpg'
   date="2015-08-12"
 %}
 
@@ -193,7 +193,7 @@ And I mean, you've had [Binance chain](https://bnbchain.org/) chain, you know, [
 {% include content-embed.html
   url='https://blog.uniswap.org/introducing-unichain'
   title='Introducing Unichain'
-  img='https://docs.unichain.org/og/og.png'
+  img='/images/docs.unichain.org/2026.01.05/og/og.png'
   date="2024-10-10"
   author='Uniswap Labs'
 %}
@@ -235,7 +235,7 @@ I think what it means, I mean, it's a strange thing that's going on in which- Le
 {% include content-embed.html
   url='https://blog.ethereum.org/2014/11/20/bitcoin-maximalism-currency-platform-network-effects'
   title='Bitcoin Maximalism, Currency, Platform, and Network Effects'
-  img='https://blog.ethereum.org/_next/image?url=%2Fimages%2Feth-org.jpeg&w=1080&q=75'
+  img='/images/blog.ethereum.org/2026.01.05/_next/image/images/eth-org.jpeg'
   date="2014-11-20"
   author='Vitalik Buterin'
 %}
@@ -283,7 +283,7 @@ So we may be partly to blame for this.
 {% include content-embed.html
   url='https://www.earlydaysofeth.org/videos/episode001/'
   title='Early Days of Ethereum - Episode 1'
-  img='https://img.youtube.com/vi/V2BJX9OkDNo/maxresdefault.jpg'
+  img='/images/img.youtube.com/2026.01.05/vi/V2BJX9OkDNo/maxresdefault.jpg'
   date="2024-01-15"
   author='Bob Summerwill'
 %}
@@ -333,7 +333,7 @@ Like the [JSON RPC](https://ethereum.github.io/execution-apis/api-documentation/
 {% include content-embed.html
   url='https://web.archive.org/web/20161221193900mp_/http://conferences.oreilly.com/bitcoin-blockchain-2015/public/schedule/speaker/193534'
   title='O\'Reilly Bitcoin & Blockchain Conference 2015 - Speaker'
-  img='https://web.archive.org/web/20150501202133im_/http://cdn.oreillystatic.com/en/assets/1/event/130/bitcoin2015_video_placeholder.jpg'
+  img='/images/web.archive.org/2026.01.05/web/20150501202133im_/http:/cdn.oreillystatic.com/en/assets/1/event/130/bitcoin2015_video_placeholder.jpg'
   date='2015-07-25'
 %}
 
@@ -459,7 +459,7 @@ There we go. June the 18th, 2019.
 {% include content-embed.html
   url='https://www.nytimes.com/2019/06/18/technology/facebook-cryptocurrency-libra.html'
   title='Facebook Plans Global Financial System Based on Cryptocurrency'
-  img='https://static01.nyt.com/images/2019/06/19/sports/19facecoin-sub/19facecoin-sub-superJumbo-v2.jpg?quality=75&auto=webp'
+  img='/images/static01.nyt.com/2026.01.05/images/2019/06/19/sports/19facecoin-sub/19facecoin-sub-superJumbo-v2.jpg'
   author='Mike Isaac and Nathaniel Popper'
   date='2019-06-18'
 %}
@@ -519,7 +519,7 @@ So I guess that gets into the question, like, why didn't that work, right? Like,
 {% include content-embed.html
   url='https://www.theverge.com/interface/2019/10/24/20929265/mark-zuckerberg-libra-hearing-congress-backlash'
   title="After this week's hearing, Libra really might be in trouble"
-  img='https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/19314251/1182969985.jpg.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C100&w=750'
+  img='/images/platform.theverge.com/2026.01.05/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/19314251/1182969985.jpg.jpg'
   author='Casey Newton'
   date='2019-10-24'
 %}
@@ -533,7 +533,7 @@ Right, yeah.
 {% include content-embed.html
   url='https://www.theverge.com/2019/10/11/20910330/mastercard-stripe-ebay-facebook-libra-association-withdrawal-cryptocurrency'
   title="Facebook's Libra Association crumbling as Visa, Mastercard, Stripe, and others exit"
-  img='https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/16677181/VRG_ILLO_3512_001.jpg'
+  img='/images/platform.theverge.com/2026.01.05/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/16677181/VRG_ILLO_3512_001.jpg'
   author='Russell Brandom'
   date='2019-10-11'
 %}
@@ -546,7 +546,7 @@ This is my thoughts. Maybe you guys have got different thoughts. Firstly, everyo
 {% include content-embed.html
   url='https://www.nytimes.com/2018/04/04/us/politics/cambridge-analytica-scandal-fallout.html'
   title='Cambridge Analytica and Facebook: The Scandal and the Fallout So Far'
-  img='https://static01.nyt.com/images/2018/03/21/business/00cambridgestory6/merlin_135756423_8ac3aeb6-7781-4912-b9e5-fd7210e35170-superJumbo.jpg?quality=75&auto=webp'
+  img='/images/static01.nyt.com/2026.01.05/images/2018/03/21/business/00cambridgestory6/merlin_135756423_8ac3aeb6-7781-4912-b9e5-fd7210e35170-superJumbo.jpg'
   author='Nicholas Confessore'
   date='2018-04-04'
 %}
@@ -586,7 +586,7 @@ OK, and then it's like, right, sort of same deal on the [EVM](https://ethereum.o
 
 {% include content-embed.html
   url='https://gendal.me/2017/12/04/not-all-business-blockchain-platforms-are-alike-to-succeed-they-need-to-reimagine-business-computing/'
-  img="https://miro.medium.com/1*EFNG4museflkdpWBW1yuzw.jpeg"
+  img="/images/miro.medium.com/2026.01.05/1*EFNG4museflkdpWBW1yuzw.jpeg"
   title='Not all business blockchain platforms are alike – To succeed, they need to re-imagine business computing'
   author='Richard Gendal Brown'
   date='2017-12-04'
@@ -641,7 +641,7 @@ Like the stats I saw from a thing [Colin Platt](https://x.com/colingplatt) did i
 {% include content-embed.html
   url='https://medium.com/@colin_/analysing-costs-benefits-of-public-blockchains-with-data-104ec5f7d7e0'
   title='Analysing Costs & Benefits of Public Blockchains with Data'
-  img='https://miro.medium.com/v2/resize:fit:720/format:webp/0*0fMDCWlSczQe8M7c.'
+  img='/images/miro.medium.com/2026.01.05/v2/resize:fit:720/format:webp/0*0fMDCWlSczQe8M7c.'
   author='Colin Platt'
   date='2018-04-10'
 %}
@@ -714,7 +714,7 @@ Okay, we can have a [private database](https://github.com/Consensys/constellatio
 {% include content-embed.html
   url='https://fortune.com/2016/10/04/jp-morgan-chase-blockchain-ethereum-quorum/'
   title='JPMorgan Chase Reveals It\'s Developing a Blockchain Based on Ethereum'
-  img='https://www.ledgerinsights.com/wp-content/uploads/2018/05/Depositphotos_169974804_m-2015-810x525.jpg'
+  img='/images/www.ledgerinsights.com/2026.01.05/wp-content/uploads/2018/05/Depositphotos_169974804_m-2015-810x525.jpg'
   author='Jeff John Roberts'
   date='2016-10-04'
 %}
@@ -761,7 +761,7 @@ Yeah. Or like, this is like the [Walmart](https://walmart.com/), [IBM](https://i
 {% include content-embed.html
   url='https://www.forbes.com/sites/astanley/2018/10/08/ready-to-rumble-ibm-launches-food-trust-blockchain-for-commercial-use/'
   title='Ready To Rumble: IBM Launches Food Trust Blockchain For Commercial Use'
-  img='https://specials-images.forbesimg.com/dam/imageserve/1045633280/960x0.jpg?fit=scale'
+  img='/images/specials-images.forbesimg.com/2026.01.05/dam/imageserve/1045633280/960x0.jpg'
   author='Andy Stanley'
   date='2018-10-08'
 %}
@@ -773,7 +773,7 @@ Yeah. Or like, this is like the [Walmart](https://walmart.com/), [IBM](https://i
 {% include content-embed.html
   url='https://www.forbes.com/sites/michaeldelcastillo/2018/08/09/ibm-maersk-blockchain-platform-adds-92-clients-as-part-of-global-launch-1/'
   title='IBM, Maersk Blockchain Platform Adds 92 Clients As Part Of Global Launch'
-  img='https://specials-images.forbesimg.com/imageserve/176619985/960x0.jpg?fit=scale'
+  img='/images/specials-images.forbesimg.com/2026.01.05/imageserve/176619985/960x0.jpg'
   author='Michael del Castillo'
   date='2018-08-09'
 %}

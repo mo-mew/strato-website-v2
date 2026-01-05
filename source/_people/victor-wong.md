@@ -19,7 +19,7 @@ These assets supported Fortune 500 companies and governments in the mining, real
 
 {% include content-embed.html
   url='https://www.coindesk.com/markets/2016/09/23/worlds-largest-mining-company-to-use-blockchain-for-supply-chain'
-  img='https://dbp0g3jqhvl0zy.archive.ph/IyFwF/cf3e724d2dcd837789474fa97ee765b13e280a7c.avif'
+  img='/images/dbp0g3jqhvl0zy.archive.ph/2026.01.05/IyFwF/cf3e724d2dcd837789474fa97ee765b13e280a7c.avif'
   title="World's Largest Mining Company to Use Blockchain for Supply Chain"
   site="Coindesk"
   author="Pete Rizzo"

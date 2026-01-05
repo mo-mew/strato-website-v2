@@ -78,7 +78,7 @@ Okay, we are live, and we have a very special episode today. We are talking abou
 
 {% include content-embed.html
   url='https://superrare.com/'
-  img='/images/superrare.com/2025.12.10/homepage.png'
+  img='/images/superrare.com/2026.01.05/homepage.png'
   description='The art market, onchain | $RARE'
   site="SuperRare.com"
 %}
@@ -98,13 +98,13 @@ Okay, we are live, and we have a very special episode today. We are talking abou
 
 **[[04:55]](https://www.youtube.com/watch?v=mqStnmOwuR0&t=295s) John Crain:** No, so I was kind of hanging out with the New York Bitcoin crowd. Actually yeah, I had actually met, I think [John Lilic](https://x.com/johnlilic), which I forgot, but I met him at the like the [New York Bitcoin Center](https://bitcoincenternyc.com/). I don't know if you guys remember that.
 
-![bitcoin center](https://www.coindesk.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fs3y3vcno%2Fproduction%2Fe060c8728f0e586689cba0da22c64bf5760b8811-1393x679.jpg%3Fauto%3Dformat&w=1920&q=75)
+![bitcoin center](/images/www.coindesk.com/2026.01.05/_next/image/cdn.sanity.io/images/s3y3vcno/production/e060c8728f0e586689cba0da22c64bf5760b8811-1393x679.jpg)
 
 **[[05:10]](https://www.youtube.com/watch?v=mqStnmOwuR0&t=310s) Victor Wong:** Yeah, we do. Yeah.
 
 **[[05:12]](https://www.youtube.com/watch?v=mqStnmOwuR0&t=312s) John Crain:** Yeah. So I was hanging around and actually I was like, I was super into [Counterparty](https://www.counterparty.io/). So I was very much like Ethereum is too complicated. [Vitalik](https://earlydaysofeth.org/people/vitalik-buterin)'s full of shit. It's not going to work. And then the network launched and I was like, OK, I was wrong. Like, this is actually super cool. I have no problem changing. I was totally wrong, this is amazing. And I was just like googling Ethereum blockchain hackathon. I was trying to find, get deeper involved. I was trying to quit my day job and go full-time crypto. And so then I think I just googled it and it was like, oh there's this hackathon in two weeks and I applied with Charles and then yeah met you guys.
 
-![counterparty](https://images.ctfassets.net/23fkqdsgbpuj/4p6OdZyGyElxyVsG36rFUM/5aa759ed0962f0760eb0c3ecdd930677/counterparty-full.png)
+![counterparty](/images/images.ctfassets.net/2026.01.05/23fkqdsgbpuj/4p6OdZyGyElxyVsG36rFUM/5aa759ed0962f0760eb0c3ecdd930677/counterparty-full.png)
 
 **[[05:52]](https://www.youtube.com/watch?v=mqStnmOwuR0&t=352s) Victor Wong:** Yeah, and to be clear, to let everyone know that we were blown away by you and your brother Charles' project, and we gave you, I think, your first job, both of you in Web3, right? We gave you the...
 
@@ -131,7 +131,7 @@ Okay, we are live, and we have a very special episode today. We are talking abou
 
 **[[06:52]](https://www.youtube.com/watch?v=mqStnmOwuR0&t=412s) John Crain:** Yeah, I, well, I mean, it was super interesting, right? We were all kind of on the ground floor at the Consensus office, or like at least me and [Kieren](/people/kieren-james-lubin) were hanging out there. And watching the ICO boom happen was fascinating. Cause I was like, I remember me and [Kieren](/people/kieren-james-lubin) talked a bunch about [ERC-20](https://eips.ethereum.org/EIPS/eip-20) tokens and like, I found it was super interesting that it was this very small bit of standard, a super simple protocol, very simple code. But like the adoption created this, there's massive wealth generation. And even if there were also lots of scams, I'd say generally net positive for humans in the economy. Like it was incredible to see that happen. And so then I saw some of the standards conversations around [ERC-721](https://eips.ethereum.org/EIPS/eip-721) and I saw the [CryptoPunks](https://www.cryptopunks.app/) launch and I was like, well, this is pretty crazy. If you think about the consumer web, it's all an image and a title tag and some metadata. It could be that the entire consumer web turns into NFTs and that I don't know exactly what the business model is going to look like, but the total addressable market is probably pretty large. So that got me into NFTs. And then on the flip side of that, I was also kind of in and around the New York art scene, like going to the art fairs. I had friends who were looking for gallery representation and kind of part of the business of art. And it just seemed obvious. I was like, oh, there's now a way to truly own digital assets. And this is obviously going to apply to digital art. So it's kind of like the marriage of my interest in the tech side, but then also my interests and passions around art.
 
-![cryptopunks](https://repository-images.githubusercontent.com/342481993/2ca22100-787d-11eb-93a8-342fc588015a)
+![cryptopunks](/images/repository-images.githubusercontent.com/2026.01.05/342481993/2ca22100-787d-11eb-93a8-342fc588015a)
 
 **[[08:25]](https://www.youtube.com/watch?v=mqStnmOwuR0&t=505s) Victor Wong:** And like, what was it like to be at the forefront of the NFT explosion? Because you guys, like, I know for a long time you were building and it was like, oh, how's it going? And no one is really paying attention. And all of a sudden, next day, everyone's talking about NFTs.
 
@@ -147,7 +147,7 @@ Okay, we are live, and we have a very special episode today. We are talking abou
 
 **[[10:08]](https://www.youtube.com/watch?v=mqStnmOwuR0&t=608s) Victor Wong:** It's funny because I remember, if you recall, what later became the [Flow](https://flow.com/) guys doing [CryptoKitties](https://www.cryptokitties.co/). They were based in Vancouver and I was talking to them about running it on our blockchain and doing that kind of stuff too at the time. And I mean, you've done so much. One of the amazing things is the launch of the [Rare token](https://coinmarketcap.com/currencies/superrare/). And you guys seem to be one of the first projects that was really committed to sort of figuring out DAO governance in reality. What led to that and how did that go? What did you figure out there?
 
-![cryptokitties](https://img.decrypt.co/insecure/rs:fit:3840:0:0:0/plain/https://cdn.decrypt.co/wp-content/uploads/2019/01/cryptokitties.jpg@webp)
+![cryptokitties](/images/img.decrypt.co/2026.01.05/insecure/rs:fit:3840:0:0:0/plain/https:/cdn.decrypt.co/wp-content/uploads/2019/01/cryptokitties.jpg)
 
 **[[10:38]](https://www.youtube.com/watch?v=mqStnmOwuR0&t=638s) John Crain:** Yeah, I mean, early on, I was like part of what got me excited about Bitcoin and Ethereum is just the idea of these networks where the users of the networks also participate in upside of the network. There's the [Fat Protocol](https://www.usv.com/writing/2016/08/fat-protocols/) article that was super popular, like 2016. So just thinking about like, OK, what does monetization look like? And can you build platforms that are more like collaborative than extractive, where it's like, if you're [Meta](https://en.wikipedia.org/wiki/Meta_Platforms), you're just like, I'm just gonna extract as much metadata and sell ads, which is a great business, but partially for me, it was almost like a thought experiment of like, is it possible to build a network where you don't have to sell ads? And it could be like, maybe it's a marketplace as the business model. And then it's like collective ownership via the token. So yeah, I was drinking a lot of the crypto Kool-Aid at the time.
 
@@ -168,7 +168,7 @@ Okay, we are live, and we have a very special episode today. We are talking abou
 
 **[[12:52]](https://www.youtube.com/watch?v=mqStnmOwuR0&t=772s) Victor Wong:** The dark ages.
 
-![gary gensler](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Gary_Gensler%2C_SEC_Chair.jpg/250px-Gary_Gensler%2C_SEC_Chair.jpg)
+![gary gensler](/images/upload.wikimedia.org/2026.01.05/wikipedia/commons/thumb/9/96/Gary_Gensler,_SEC_Chair.jpg/250px-Gary_Gensler,_SEC_Chair.jpg)
 
 **[[12:54]](https://www.youtube.com/watch?v=mqStnmOwuR0&t=774s) Bob Summerwill:** [Gary](https://en.wikipedia.org/wiki/Gary_Gensler)'s going to be turning up for a job somewhere soon, isn't he?
 
@@ -189,7 +189,7 @@ Okay, we are live, and we have a very special episode today. We are talking abou
 
 **[[15:20]](https://www.youtube.com/watch?v=mqStnmOwuR0&t=920s) Kieren James-Lubin:** I mean, in the [pump.fun](https://pump.fun/) streamer heyday, I think that it could have really worked during that period of time. Yeah, you know, maybe we could have people stream. Yeah, it's like live going. Like, is the art good or bad? Watch this artist threaten to commit suicide.
 
-![pump.fun](https://www.cryptopolitan.com/wp-content/uploads/2025/01/Pump.fun-Solana-SOL-below-200.webp)
+![pump.fun](/images/www.cryptopolitan.com/2026.01.05/wp-content/uploads/2025/01/Pump.fun-Solana-SOL-below-200.webp)
 
 **Victor Wong:** I did do stuff on a dating project once where you basically had to be voted in based on your photos, which just seems horrible. Yeah.
 
@@ -298,7 +298,7 @@ Okay, we are live, and we have a very special episode today. We are talking abou
 
 ### Bitcoin Ordinals / onchain data vs offchain metadata
 
-![ordinals](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-z7Y4kI2GQWo5r3-YIsrCgdLCI5UtJQXLWA&s)
+![ordinals](/images/encrypted-tbn0.gstatic.com/2026.01.05/images)
 
 **[[29:12]](https://www.youtube.com/watch?v=mqStnmOwuR0&t=1752s) John Crain:** Yeah, we've done a couple of projects on [Runes](https://github.com/luminexord/runes) with artists and yeah, it's super interesting. I think there's going to be art on many blockchains. Obviously, Bitcoin and Ethereum being the most secure probably have the highest likelihood of it lasting. But yeah, it's actually, people really like [Ordinals](https://ordinals.com/). It's funny. One of the sort of paradoxes that are like the funny things we ran into is early on, we would talk to investors and they're like, you need to get rid of the wallet. It's too complicated. But actually it kind of ends up being this, like, you gotta know all the right terms. It's almost like you get the secret incantation, you get inducted into the club and you know how it works. And so like, I think people really like that [Ordinals](https://ordinals.com/) are a little more complex and harder to understand than NFTs on Ethereum. Which is just, yeah, it's sort of, that's a funny anecdote, but they're quite popular. I think they'll be around for a while.
 
@@ -332,7 +332,7 @@ Okay, we are live, and we have a very special episode today. We are talking abou
 
 **[[33:47]](https://www.youtube.com/watch?v=mqStnmOwuR0&t=2027s) Kieren James-Lubin:** We can make a thumbnail, like the [Ron Paul](https://en.wikipedia.org/wiki/Ron_Paul) It's happening! Exactly, exactly.
 
-![ron paul](https://media.giphy.com/media/rl0FOxdz7CcxO/giphy.gif)
+![ron paul](/images/media.giphy.com/2026.01.05/media/rl0FOxdz7CcxO/giphy.gif)
 
 **[[33:52]](https://www.youtube.com/watch?v=mqStnmOwuR0&t=2032s) Victor Wong:** We need the Mission Accomplished banner.
 
@@ -340,7 +340,7 @@ Okay, we are live, and we have a very special episode today. We are talking abou
 
 **John Crain:** Yeah, exactly.
 
-![george bush](https://www.aljazeera.com/wp-content/uploads/2008/04/1_246917_1_2.jpeg)
+![george bush](/images/www.aljazeera.com/2026.01.05/wp-content/uploads/2008/04/1_246917_1_2.jpeg)
 
 **Victor Wong:** Well, John, thank you for your time. And as always, we're really glad that you're doing so well. And where can people find you and learn more about all the stuff you do?
 
@@ -353,14 +353,14 @@ Okay, we are live, and we have a very special episode today. We are talking abou
 
 {% include content-embed.html
   url='https://offline.superrare.com/'
-  img='/images/superrare.com/2025.12.10/offline.png'
+  img='/images/superrare.com/2026.01.05/offline.png'
   title='Offline by SuperRare'
   description='Physical gallery space on the Bowery in New York City showcasing digital art, physical art, installations, and projections from the <a href="https://superrare.com/">SuperRare</a> community.'
 %}
 
 **[[34:25]](https://www.youtube.com/watch?v=mqStnmOwuR0&t=2065s) Kieren James-Lubin:** You said about a gallery one more time? I missed it.
 
-![gallery](https://campaigns.superrare.com/hubfs/FdR_bFxVIAE6-XW.jpeg)
+![gallery](/images/campaigns.superrare.com/2026.01.05/hubfs/FdR_bFxVIAE6-XW.jpeg)
 
 **[[34:28]](https://www.youtube.com/watch?v=mqStnmOwuR0&t=2068s) John Crain:** Oh yeah, [Offline by SuperRare](https://offline.superrare.com/).
 

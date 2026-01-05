@@ -60,9 +60,9 @@ We are using two custom tokens on Sepolia so competitors will have to add those 
     - Address: 0x46e96acF148b019da71E41F36239833f550dFeB9
     - Token decimal: 18
 
-![MetaMask Import Process](https://stratoscan.testnet.strato.nexus/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimport2.c399facb.png&w=384&q=75)
+![MetaMask Import Process](/images/stratoscan.testnet.strato.nexus/2026.01.05/_next/static/media/import2.c399facb.png)
 
-![MetaMask Token Details](https://stratoscan.testnet.strato.nexus/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimport1.578ea21c.png&w=384&q=75)
+![MetaMask Token Details](/images/stratoscan.testnet.strato.nexus/2026.01.05/_next/static/media/import1.578ea21c.png)
 
 The token symbol and decimals should populate automatically.
 

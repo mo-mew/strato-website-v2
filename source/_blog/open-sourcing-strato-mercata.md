@@ -2,7 +2,7 @@
 title: "Open sourcing STRATO Mercata"
 date: 2025-01-14
 author: "Bob Summerwill"
-img: https://img.youtube.com/vi/x8jIUg5jXjg/hqdefault.jpg
+img: /images/img.youtube.com/2026.01.05/vi/x8jIUg5jXjg/hqdefault.jpg
 description: "Announcement of open-sourcing the STRATO Mercata platform, applications and tools."
 categories: ["Press Release"]
 ---

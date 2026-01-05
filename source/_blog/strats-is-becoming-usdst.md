@@ -3,7 +3,7 @@ title: "STRATs is Becoming USDST—Here's What You Need to Know"
 date: 2025-02-25
 author: "Jordan Cole"
 description: "Names matter. That's why we're changing STRATs to USDST—our stablecoin pegged 1:1 to the U.S. dollar."
-img: https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/United_States_one_dollar_bill%2C_obverse.jpg/2560px-United_States_one_dollar_bill%2C_obverse.jpg
+img: /images/upload.wikimedia.org/2026.01.05/commons/thumb/7/7b/United_States_one_dollar_bill,_obverse.jpg/2560px-United_States_one_dollar_bill,_obverse.jpg
 categories: ["Press Release"]
 ---
 
