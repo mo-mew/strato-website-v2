@@ -101,7 +101,7 @@ embed-content-width: 50%
           {% endif %}
           {% if page.social.wikipedia %}
           <a href="{{ page.social.wikipedia }}" target="_blank" rel="noopener" title="Wikipedia">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Wikipedia-logo-v2.svg" alt="Wikipedia" class="wikipedia-icon">
+            <img src="/images/upload.wikimedia.org/2026.01.05/wikipedia/commons/8/80/Wikipedia-logo-v2.svg" alt="Wikipedia" class="wikipedia-icon">
           </a>
           {% endif %}
           {% if page.social.medium %}
@@ -127,61 +127,6 @@ embed-content-width: 50%
     </div>
   </div>
   
-  {% if page.devcon0 %}
-  <div class="devcon0-section">
-    <h4 class="devcon0-header">DEVCON0 self-introduction</h4>
-    {% assign name_parts = page.name | split: ' ' %}
-    {% assign firstname = name_parts[0] | downcase %}
-    {% assign lastname = name_parts[-1] | downcase %}
-    {% assign thumbnail_filename = firstname | append: '-' | append: lastname | append: '.jpg' %}
-    {% assign thumbnail_path = '/images/youtube.com/BvvUlKDqp0/thumbnails/' | append: thumbnail_filename %}
-    {% assign thumbnail_file_path = 'images/youtube.com/BvvUlKDqp0/thumbnails/' | append: thumbnail_filename %}
-    
-    {% comment %}Check if thumbnail file exists{% endcomment %}
-    {% assign thumbnail_exists = false %}
-    {% for static_file in site.static_files %}
-        {% if static_file.path == thumbnail_path %}
-            {% assign thumbnail_exists = true %}
-            {% break %}
-        {% endif %}
-    {% endfor %}
-    
-    <div class="devcon0-container">
-        <div class="devcon0-thumbnail-wrapper">
-            {% if thumbnail_exists %}
-                <img src="{{ thumbnail_path }}" 
-                     alt="{{ page.name }} DEVCON0 introduction" 
-                     class="devcon0-thumbnail-img"
-                     data-person-name="{{ page.name }}"
-                     data-devcon0-timestamp="{{ page.devcon0 }}">
-                <div class="devcon0-play-overlay">
-                    <div class="devcon0-play-triangle"></div>
-                </div>
-            {% else %}
-                <!-- No thumbnail available, show iframe directly -->
-                <div class="devcon0-fallback">
-                    <iframe 
-                        src="https://www.youtube.com/embed/_BvvUlKDqp0?start={{ page.devcon0 }}" 
-                        frameborder="0" 
-                        allowfullscreen
-                        title="DEVCON0 self-introduction"
-                        class="devcon0-iframe">
-                    </iframe>
-                </div>
-            {% endif %}
-        </div>
-        <div class="devcon0-video-player">
-            <iframe 
-                src="" 
-                frameborder="0" 
-                allowfullscreen
-                title="DEVCON0 self-introduction"
-                class="devcon0-iframe">
-            </iframe>
-        </div>
-    </div>
-  </div>
-  {% endif %}
 </div>
 
 <!--

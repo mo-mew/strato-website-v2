@@ -3,7 +3,7 @@ title: "Introducing Mercata Rewards: Earn CATA for Every Real Asset Move"
 date: 2025-05-29
 author: "Jordan Cole"
 description: "STRATO Mercata is reimagining how users interact with real-world assets by combining the familiarity of gold and silver with the speed and utility of a decentralized financial system."
-img: https://live.staticflickr.com/7026/6710868859_ef0cc13ace_b.jpg
+img: /images/live.staticflickr.com/2026.01.05/7026/6710868859_ef0cc13ace_b.jpg
 categories: ["General"]
 ---
 

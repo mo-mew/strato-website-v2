@@ -147,7 +147,7 @@ You can tell [Bob]({{ '/people/bob-summerwill/' | relative_url }}), [Bob]({{ '/p
 Yes, so we've been building since the launch of Ethereum and continue to follow this journey. So you'll get hopefully no shilling and a lot of good historical context about what we're going to talk about today. And today we are going to talk about the highlights from [TOKEN2049](https://token2049.com).
 
 {% include content-embed.html 
-   img="https://console.kr-asia.com/wp-content/uploads/2023/09/Token2049-Singapore-2023.png"
+   img="/images/console.kr-asia.com/2026.01.05/wp-content/uploads/2023/09/Token2049-Singapore-2023.png"
    url="https://www.token2049.com/"
    title="TOKEN2049"
    description="The World's Largest Crypto Event"
@@ -220,7 +220,7 @@ But yeah, and also, you know, like tons of other Congress people and state level
 It's like getting into these boring ETF, you know, treasury company, government level adoption sort of stuff that's happened earlier than on the Bitcoin side than more generally. But yeah, also, I mean, obviously, like the Trumps have got their [World Liberty](https://worldlibertyfinancial.com/) nonsense going on and got to be pumping that one.
 
 {% include content-embed.html 
-   img="https://www.reuters.com/resizer/v2/556OJE5NPNLZJBOJU7SSGUDTYM.jpg?auth=40be8fa5ceb85557e88bdab42c5a2ab901fcd6540aec9aa1fe5e7fcdd469c102&height=1005&width=1920&quality=80&smart=true"
+   img="/images/www.reuters.com/2026.01.05/resizer/v2/556OJE5NPNLZJBOJU7SSGUDTYM.jpg"
    url="https://worldlibertyfinancial.com/"
    title="World Liberty Financial"
    description="Digital assets and decentralized finance platform"
@@ -338,7 +338,7 @@ And sorry, I thought you were talking about the [Facebook Libra](https://en.wiki
 No, no, no, no. Yeah, the [Milei](https://en.wikipedia.org/wiki/Javier_Milei) associated meme. The Milei associated meme, gotcha.
 
 {% include content-embed.html 
-   img="https://ichef.bbci.co.uk/news/1024/cpsprodpb/f27c/live/7325f3b0-ed48-11ef-ae3e-e51fb268b1dc.jpg.webp"
+   img="/images/ichef.bbci.co.uk/2026.01.05/news/1024/cpsprodpb/f27c/live/7325f3b0-ed48-11ef-ae3e-e51fb268b1dc.jpg.webp"
    url="https://www.bbc.com/news/articles/cp9x9j89evxo"
    title="Argentina president faces impeachment calls over crypto crash"
    description="President Javier Milei is facing legal action over his promotion of the $LIBRA cryptocurrency"
@@ -388,7 +388,7 @@ Shout out to you, [Shiba](https://x.com/Cryptotarzan19). [Bob]({{ '/people/bob-s
 Yeah, I mean, you know, I guess this is all sort of maturity. And it's a strange kind of feeling, you know, looking back on all of our joint experience, sort of on [Enterprise Ethereum](https://entethalliance.org/) efforts kicking off in 2016, 2017.
 
 {% include content-embed.html 
-   img="https://entethalliance.org/wp-content/uploads/2025/04/Hero-Website-1.png"
+   img="/images/entethalliance.org/2026.01.05/wp-content/uploads/2025/04/Hero-Website-1.png"
    url="https://entethalliance.org/"
    title="Enterprise Ethereum Alliance"
    description="The leading nonprofit driving Enterprise Ethereum Adoption"
@@ -399,7 +399,7 @@ And really the thought there that all of these public and private use cases coul
 
 {% include content-embed.html 
    url="https://fortune.com/crypto/2025/09/04/stripe-paradigm-tempo-blockchain-stablecoins-matt-huang-payments/"
-   img="https://fortune.com/img-assets/wp-content/uploads/2025/09/GettyImages-938151664-e1756997857474.jpg?w=1440&q=90"
+   img="/images/fortune.com/2026.01.05/img-assets/wp-content/uploads/2025/09/GettyImages-938151664-e1756997857474.jpg"
    title="Stripe and Paradigm Launch Tempo Blockchain for Stablecoin Payments"
    description="Stripe announces Tempo, a consortium blockchain for payments"
    site="fortune.com"
@@ -409,7 +409,7 @@ You know, set up and then you've got, you know, [NASDAQ](https://www.nasdaq.com/
 
 {% include content-embed.html 
    url="https://finance.yahoo.com/news/nasdaq-seeks-sec-green-light-174216225.html"
-   img="https://s.yimg.com/ny/api/res/1.2/mszbNOaIAQ_FhbHSVEVUng--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTUzOA--/https://media.zenfs.com/en/cryptonews_us_711/5ec146b49ba01566ee0551beaebb4496"
+   img="/images/s.yimg.com/2026.01.05/ny/api/res/1.2/mszbNOaIAQ_FhbHSVEVUng--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTUzOA--/https:/media.zenfs.com/en/cryptonews_us_711/5ec146b49ba01566ee0551beaebb4496"
    title="Nasdaq Seeks SEC Green Light for Blockchain-Based Equity Trading"
    description="Nasdaq announces plans to launch blockchain-based equities on chain"
    site="finance.yahoo.com"
@@ -470,7 +470,7 @@ Like I'm friends socially with the CEO of [Lighter](https://lighter.xyz/). And l
 
 {% include content-embed.html 
    url="https://lighter.xyz/"
-   img="https://pbs.twimg.com/profile_banners/1604942990417580032/1758207995/1080x360"
+   img="/images/pbs.twimg.com/2026.01.05/profile_banners/1604942990417580032/1758207995/1080x360"
    title="Lighter"
    description="High-performance decentralized exchange with circuit-based matching"
    site="lighter.xyz"
@@ -628,7 +628,7 @@ Yeah, and one question, like, are we going to [DevConnect](https://devconnect.or
 
 {% include content-embed.html 
    url="https://devconnect.org/"
-   img="https://pbs.twimg.com/media/G2kH4V3aAAAGPgA?format=jpg&name=large"
+   img="/images/pbs.twimg.com/2026.01.05/media/G2kH4V3aAAAGPgA.jpg"
    title="Devconnect"
    description="Ethereum developer conference and collaborative week"
    site="devconnect.org"

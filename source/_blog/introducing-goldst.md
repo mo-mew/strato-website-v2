@@ -3,7 +3,7 @@ title: "Introducing GOLDST: A New Era for Gold, and for You"
 date: 2025-04-15
 author: "Jordan Cole"
 description: "We've been conditioned to think about gold in terms of safety. Stability. Hedging against chaos. But what if gold could be more than just a store of value?"
-img: https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Gold_bullion_bars.jpg/1024px-Gold_bullion_bars.jpg
+img: /images/upload.wikimedia.org/2026.01.05/commons/thumb/a/af/Gold_bullion_bars.jpg/1024px-Gold_bullion_bars.jpg
 categories: ["General"]
 ---
 

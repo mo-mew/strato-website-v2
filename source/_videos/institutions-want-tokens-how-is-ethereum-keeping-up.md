@@ -125,7 +125,7 @@ It was in 2017. Yeah, February 2017 was the launch date on the 28th.
 
 {% include content-embed.html
   url='https://www.reddit.com/r/ethereum/comments/5wlsft/enterprise_ethereum_alliance_launch/'
-  img='https://redditinc.com/hs-fs/hubfs/Reddit%20Inc/Brand/Redditinc_Thumbnail_Brand_Logo.png'
+  img='/images/redditinc.com/2026.01.05/hs-fs/hubfs/Reddit Inc/Brand/Redditinc_Thumbnail_Brand_Logo.png'
   title='Enterprise Ethereum Alliance launch'
   site='reddit.com/r/ethereum'
   date='2017-02-28'
@@ -162,7 +162,7 @@ And then [Matt Spoke](https://x.com/MattSpoke) of [Nuco](https://web.archive.org
 
 {% include content-embed.html
   url='https://www.linkedin.com/in/matthewspoke/'
-  img='https://i0.wp.com/commercialrealestatepodcast.com/wp-content/uploads/2019/03/Spoke-Matthew.png?fit=1280%2C854&ssl=1'
+  img='/images/i0.wp.com/2026.01.05/commercialrealestatepodcast.com/wp-content/uploads/2019/03/Spoke-Matthew.png'
   title='Matthew Spoke'
   description='Founder and Former CEO of Nuco (acquired by Aion Foundation)'
   site='linkedin.com'
@@ -233,7 +233,7 @@ But then they did like work on like Chinese cryptography and stuff. Like they've
 
 {% include content-embed.html
   url='https://cryptape.com/'
-  img='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCIA5od3jfhDfMjQ9dQxzA2XeDQdD464SVI4PIls7KuufMQruvluYVNFRaFMoW_VAlXio&usqp=CAU'
+  img='/images/encrypted-tbn0.gstatic.com/2026.01.05/images'
   title='Cryptape'
   site='cryptape.com'
 %}
@@ -251,7 +251,7 @@ And Masterchain, which was in Russia, that was like a [Sberbank](https://www.sbe
   url='https://cointelegraph.com/news/blockchain-revolution-in-russia-bank-of-russia-tests-masterchain'
   title='Blockchain revolution in Russia: Bank of Russia tests MasterChain'
   description='Bank of Russia has introduced Masterchain, an Ethereum-based Blockchain prototype created to serve interests of the financial market actors.'
-  img='https://images.cointelegraph.com/cdn-cgi/image/format=auto,onerror=redirect,quality=90,width=1434/https://s3.cointelegraph.com/storage/uploads/view/64d02c317d463a581bbab940f42cf78b.jpg'
+  img='/images/images.cointelegraph.com/2026.01.05/cdn-cgi/image/s3.cointelegraph.com/storage/uploads/view/64d02c317d463a581bbab940f42cf78b.jpg'
   site='Cointelegraph'
   author='Alicia Naumoff'
   date='2016-10-13'
@@ -277,7 +277,7 @@ Yeah, well, I mean, so, I mean, [Consensys](https://consensys.io/) were very cri
 {% include content-embed.html
   url='https://consensys.io/'
   title='Consensys'
-  img='https://images.ctfassets.net/gjyjx7gst9lo/2agYMdlB1taVmpfDj0TX6C/058794a91b27f556b245966b4934075f/Consensys-Share-Image-Logo.png?fm=jpg'
+  img='/images/images.ctfassets.net/2026.01.05/gjyjx7gst9lo/2agYMdlB1taVmpfDj0TX6C/058794a91b27f556b245966b4934075f/Consensys-Share-Image-Logo.png'
   site='consensys.io'
 %}
 
@@ -301,7 +301,7 @@ And that was not announced at the time of [DEVCON](https://www.earlydaysofeth.or
 
 {% include content-embed.html
   url='https://archive.ph/Q1Xm0'
-  img='https://ddcirqxjy3z7wl.archive.ph/Q1Xm0/f83f5bdf760bd304acc7dc7225ff8a7b91af31f1.jpg'
+  img='/images/ddcirqxjy3z7wl.archive.ph/2026.01.05/Q1Xm0/f83f5bdf760bd304acc7dc7225ff8a7b91af31f1.jpg'
   title='J.P. Morgan Has a New Twist on Blockchain'
   site='Wall Street Journal'
   date='2016-10-03'
@@ -320,7 +320,7 @@ So that was a permissioned Ethereum client off POC5 pre-mainnet. Yeah. Mid-2014 
 
 {% include content-embed.html
   url='https://blog.ethereum.org/2014/08/27/state-ethereum-august-edition'
-  img='https://blog.ethereum.org/_next/image?url=%2Fimages%2Feth-org.jpeg&w=1080&q=75'
+  img='/images/blog.ethereum.org/2026.01.05/_next/image/images/eth-org.jpeg'
   title='State of Ethereum: August Edition'
   author='Vitalik Buterin'
   date='2014-08-27'
@@ -349,7 +349,7 @@ Because, well, at some point as well with [Quorum](https://github.com/Consensys/
 
 {% include content-embed.html
   url='https://bobsummerwill.com/2016/07/12/ethereum-everywhere/'
-  img='https://bobsummerwill.com/wp-content/uploads/2016/07/private.jpg'
+  img='/images/bobsummerwill.com/2026.01.05/wp-content/uploads/2016/07/private.jpg'
   title='Ethereum Everywhere'
   author='Bob Summerwill'
   date='2016-07-12'
@@ -359,7 +359,7 @@ That fucked up.
 
 {% include content-embed.html
   url='https://www.ibtimes.co.uk/hyperledger-project-reflects-blockchain-politics-1603381'
-  img='https://d.ibtimes.co.uk/en/full/1586352/hyperledger.webp?w=522&f=d691bc62e3180dd9262650da26c6d8ba'
+  img='/images/d.ibtimes.co.uk/2026.01.05/en/full/1586352/hyperledger.webp'
   title='Hyperledger Project Reflects Blockchain Politics'
   author='Ian Allison'
   date='2017-01-27'
@@ -379,7 +379,7 @@ I mean, also, you know, you have got that market pressure, right, of [Corda](htt
 
 {% include content-embed.html
   url='https://www.coindesk.com/markets/2017/07/11/fabric-10-hyperledger-releases-first-production-ready-blockchain-software'
-  img='https://www.coindesk.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fs3y3vcno%2Fproduction%2F96b93f7ed816b58438c9fd32ad77b57c8e69954b-1500x994.jpg%3Fauto%3Dformat&w=1920&q=75'
+  img='/images/www.coindesk.com/2026.01.05/_next/image/cdn.sanity.io/images/s3y3vcno/production/96b93f7ed816b58438c9fd32ad77b57c8e69954b-1500x994.jpg'
   title='Fabric 1.0: Hyperledger Releases First Production-Ready Blockchain Software'
   author='Michael del Castillo'
   date='2017-07-11'
@@ -387,7 +387,7 @@ I mean, also, you know, you have got that market pressure, right, of [Corda](htt
 
 {% include content-embed.html
   url='https://www.coindesk.com/markets/2017/10/03/icing-on-the-cake-r3-launches-corda-distributed-ledger-version-10'
-  img='https://www.coindesk.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fs3y3vcno%2Fproduction%2F5ad7ed2aa46affe53b14a692fa61d5f856847339-1500x1000.jpg%3Fauto%3Dformat&w=1920&q=75'
+  img='/images/www.coindesk.com/2026.01.05/_next/image/cdn.sanity.io/images/s3y3vcno/production/5ad7ed2aa46affe53b14a692fa61d5f856847339-1500x1000.jpg'
   title='Icing on the Cake: R3 Launches Corda Distributed Ledger Version 1.0'
   author='Michael del Castillo'
   date='2017-10-03'
@@ -410,7 +410,7 @@ Well, I think there was another parallel thing that was happening. At that [DEVC
 {% include content-embed.html
   url='https://cointelegraph.com/news/santander-confirms-fiat-backed-token-project-on-ethereum-blockchain'
   title='Santander Confirms Fiat-backed Token Project on Ethereum Blockchain'
-  img='https://images.cointelegraph.com/cdn-cgi/image/format=auto,onerror=redirect,quality=90,width=1434/https://s3.cointelegraph.com/storage/uploads/view/eb6d1dcc154fffe2a1f22e041c738a2e.jpg'
+  img='/images/images.cointelegraph.com/2026.01.05/cdn-cgi/image/s3.cointelegraph.com/storage/uploads/view/eb6d1dcc154fffe2a1f22e041c738a2e.jpg'
   author='Angus Leung'
   date='2016-09-24'
 %}
@@ -449,7 +449,7 @@ I mean, I don't know if it's like, no, there is, but there were some interesting
 {% include content-embed.html
   url='https://sibos.com'
   title='Sibos'
-  img='https://www.finextra.com/finextra-images/top_pics/xl/sibos2022amsterdamlogocmykvertical.jpg'
+  img='/images/www.finextra.com/2026.01.05/finextra-images/top_pics/xl/sibos2022amsterdamlogocmykvertical.jpg'
 %}
 
 <a id="current-institutional-landscape"></a>
@@ -475,7 +475,7 @@ Oh yeah. So [Sibos](https://www.sibos.com/) is the big [Swift](https://swift.com
 {% include content-embed.html
   url='https://swift.com'
   title='Swift'
-  img='https://thedigitalbanker.com/wp-content/uploads/2023/12/swift-2.png'
+  img='/images/thedigitalbanker.com/2026.01.05/wp-content/uploads/2023/12/swift-2.png'
 %}
 
 It's actually a co-op. It's a DAO for tried by. Kudos to [Danielle](https://www.linkedin.com/in/daniellefrizziola/) from [Consensys](https://consensys.io/) who said that to me once.  *(Bob - that is Danielle Frizziola)*
@@ -512,7 +512,7 @@ And so they used to have a different like kind of messaging format. And recently
 {% include content-embed.html
   url='https://www.iso20022.org/'
   title='ISO 20022 - Universal financial industry messaging scheme'
-  img='https://www.iso20022.org/sites/default/files/styles/scale_crop_1200w_650h/public/2020-03/shutterstock_303722042_Blue_Umbrellas.jpg?itok=WeDwQ-8t'
+  img='/images/www.iso20022.org/2026.01.05/sites/default/files/styles/scale_crop_1200w_650h/public/2020-03/shutterstock_303722042_Blue_Umbrellas.jpg'
 %}
 
 [[16:37]](https://www.youtube.com/watch?v=CNavXFv3ats&t=997s) **Kieren:**
@@ -588,7 +588,7 @@ Yeah, yeah, yeah. They actually exactly the same thing, but it's just in a diffe
 {% include content-embed.html
   url='https://cbdctracker.hrf.org/home'
   title='Human Rights Foundation - CBDC Tracker'
-  img='https://hrf.org/wp-content/uploads/2024/11/Latest-Web-Header-CBDC-Silver-Anthem-press-release-V1-1.png'
+  img='/images/hrf.org/2026.01.05/wp-content/uploads/2024/11/Latest-Web-Header-CBDC-Silver-Anthem-press-release-V1-1.png'
 %}
 
 <a id="technical-maturity-and-capabilities"></a>
@@ -616,7 +616,7 @@ Like the four points that you had in the [ARC paper](https://www.circle.com/blog
 {% include content-embed.html
   url='https://www.circle.com/blog/introducing-arc-an-open-layer-1-blockchain-purpose-built-for-stablecoin-finance'
   title='Introducing Arc: An Open Layer-1 Blockchain Purpose-Built for Stablecoin Finance'
-  img='https://cdn.prod.website-files.com/67116d0daddc92483c812ead/68961fad0ee4f552ba5641e3_Blog_Arc-launch-p-1080.jpg'
+  img='/images/cdn.prod.website-files.com/2026.01.05/67116d0daddc92483c812ead/68961fad0ee4f552ba5641e3_Blog_Arc-launch-p-1080.jpg'
   date="2015-08-12"
 %}
 
@@ -684,7 +684,7 @@ They released like an incredible product like four months ago in April, like the
 {% include content-embed.html
   url='https://www.coindesk.com/business/2025/04/02/wall-street-giant-dtcc-unveils-tokenized-collateral-platform-in-crypto-push'
   title='Wall Street Giant DTCC Unveils Tokenized Collateral Platform in Crypto Push'
-  img='https://www.coindesk.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fs3y3vcno%2Fproduction%2Fdf7f652470cec99d780a4421238b72e152be1176-1440x1080.jpg%3Fauto%3Dformat&w=1920&q=75'
+  img='/images/www.coindesk.com/2026.01.05/_next/image/cdn.sanity.io/images/s3y3vcno/production/df7f652470cec99d780a4421238b72e152be1176-1440x1080.jpg'
   author="Krisztian Sandor"
   date='2025-04-02'
 %}
@@ -719,7 +719,7 @@ Like Nike was the first to like sell a ton of NFTs. And then you're seeing like,
 {% include content-embed.html
   url='https://www.theverge.com/news/656960/nike-lawsuit-rtfkt-nft-virtual-shoes'
   title='Nike is facing a lawsuit from people who bought its NFTs'
-  img='https://platform.theverge.com/wp-content/uploads/sites/2/2025/04/Nike-Cryptokicks.png?quality=90&strip=all&crop=0%2C3.3333333333333%2C100%2C93.333333333333&w=750'
+  img='/images/platform.theverge.com/2026.01.05/wp-content/uploads/sites/2/2025/04/Nike-Cryptokicks.png'
   author='Wes Davis'
   date='2025-04-27'
 %}
@@ -771,13 +771,13 @@ Wow. I've heard like several executive at presentation at [Sibos](https://www.si
 
 Having said that, and as, you know, decision makers, they also want to make sure like they keep the door open and not being locked. So they move progressively. You know, [60% of the stablecoin issuance](https://www.developerreport.com/reports/devs/2024?s=ethereum-is-the-1-ecosystem-for-stablecoins-59-of-stablecoins-are-issued-onto-ethereum) is on Ethereum.
 
-![59% of issuance on Ethereum](https://storage.googleapis.com/electric-capital-developer-report/report/2024/en/20241222154509/slide_images/187.webp)
+![59% of issuance on Ethereum](/images/storage.googleapis.com/2026.01.05/electric-capital-developer-report/report/2024/en/20241222154509/slide_images/187.webp)
 
 I think probably 85 to 90% of all RWAs, it's the same. Some similar statistics about DeFi activities. That's, you know, like [Electric Capital](https://www.electriccapital.com), like you can see a graph like three times more like that.
 
 And then the other ecosystem in terms of like builders and everything. So that's the [most radiant and advanced](https://www.developerreport.com/reports/devs/2024?s=evm-has-strong-network-effects-evm-is-the-1-tech-stack-bigger-than-the-next-by-3-6x), you know, ecosystem in terms of research on every, every facet. And so that's, they know, they recognize.
 
-![EVM is the #1 tech stack, bigger than the next by 3.6x](https://storage.googleapis.com/electric-capital-developer-report/report/2024/en/20241222154509/slide_images/56.webp)
+![EVM is the #1 tech stack, bigger than the next by 3.6x](/images/storage.googleapis.com/2026.01.05/electric-capital-developer-report/report/2024/en/20241222154509/slide_images/56.webp)
 
 But it doesn't mean that we need to keep educating, to keep like, you know, working with the [EF](https://ethereum.foundation) for instance, like they've been incredible work for the last few months of really like packaging the message in a better way that can be more digestible. But there's more like some work for instance, like, you know, like the protocol team, they're already addressing so many of the fear, like can have some different like, you know, digital asset manager in financial institution. But how we bring that message to the right people, package it in a way that it's easy to understand.
 
@@ -800,7 +800,7 @@ There's like [Canton](https://www.canton.network) around. I don't know what they
 {% include content-embed.html
   url='https://www.canton.network'
   title='Canton - Where finance flows'
-  img='https://www.canton.network/hubfs/Homepage-Privacy-fit-for-regulated-institutions.png'
+  img='/images/www.canton.network/2026.01.05/hubfs/Homepage-Privacy-fit-for-regulated-institutions.png'
 %}
 
 Well, I know, but does [DA](https://www.digitalasset.com) still have its own, like big proprietary-ish stack?
@@ -865,7 +865,7 @@ And I remember- They had buses in front of the [Sibos](https://www.sibos.com/) c
 {% include content-embed.html
   url='https://archive.ph/ycYrC'
   title='Did Ripple Hijack the Swift Conference or Merely Borrow Some Audience?'
-  img='https://blogs-images.forbes.com/tomgroenfeldt/files/2017/10/Sibos-IBM-613-300x200.jpg'
+  img='/images/blogs-images.forbes.com/2026.01.05/tomgroenfeldt/files/2017/10/Sibos-IBM-613-300x200.jpg'
   author='Tom Groenfeldt'
   site='Forbes'
   date='2017-10-25'
@@ -893,7 +893,7 @@ I don't think they would actually in those terms. I think it's a partnership and
 {% include content-embed.html
   url='https://r3.com/r3-signals-strategic-shift-to-lead-the-convergence-of-public-and-private-blockchains-to-deliver-internet-capital-markets-through-collaboration-with-solana-foundation/'
   title='R3 signals strategic shift to lead the convergence of public and private blockchains to deliver internet capital markets through collaboration with Solana Foundation'
-  img='https://d1gmslq1wnd7nq.archive.ph/vWH3N/f58fb6070629d07bb7bfd1c18c788019bf8e1ce3.jpg'
+  img='/images/d1gmslq1wnd7nq.archive.ph/2026.01.05/vWH3N/f58fb6070629d07bb7bfd1c18c788019bf8e1ce3.jpg'
   date='2025-05-22'
 %}
 
@@ -909,7 +909,7 @@ Well, yes, behind the scene, like the [Fabric](https://github.com/hyperledger/fa
 {% include content-embed.html
   url='https://www.bis.org/about/bisih/topics/fmis/agora.htm'
   title='Project Agora: exploring tokenisation of cross-border payments'
-  img='https://www.bis.org/img/banners/bisih_agora.png'
+  img='/images/www.bis.org/2026.01.05/img/banners/bisih_agora.png'
   date='2025-10-14'
 %}
 
@@ -966,7 +966,7 @@ And I think that ties very nicely back to the start of the conversation and abou
 {% include content-embed.html
   url='https://spectrum.ieee.org/enterprise-ethereum-alliance-launches'
   title='Corporate Titans Unite to Build an Enterprise Version of the Ethereum Blockchain'
-  img='https://spectrum.ieee.org/media-library/four-men-and-two-women-seated-on-a-raised-platform.jpg?id=25582595&width=1200&height=900'
+  img='/images/spectrum.ieee.org/2026.01.05/media-library/four-men-and-two-women-seated-on-a-raised-platform.jpg'
   date='2017-03-02'
   author="Morgan E Peck"
   site="IEEE Spectrum"
