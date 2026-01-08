@@ -1,18 +1,22 @@
 ---
 name: Steve Hsu
+photo: /images/media.licdn.com/2026.01.08/steve-hsu/profile.jpg
 description: AI Founder, Professor of Theoretical Physics and of Computational Mathematics, Science, and Engineering
 social:
-  twitter: https://x.com/hsu_steve
+  twitter: https://twitter.com/hsu_steve
   linkedin: https://www.linkedin.com/in/stevehsu/
+  website: https://stevehsu.substack.com/
+  youtube: https://www.youtube.com/manifoldpodcast
+  wikipedia: https://en.wikipedia.org/wiki/Stephen_Hsu
 ---
 
 Professor of Theoretical Physics and Professor of Computational Mathematics, Science, and Engineering, Michigan State University
 
-Founder, SuperFocus.ai -- Enterprise GPT. AIs using LLMs for language capability, but with customer-defined memory module (ground truth corpus) to eliminate hallucination.
+Founder, [SuperFocus.ai](https://SuperFocus.ai) -- Enterprise GPT. AIs using LLMs for language capability, but with customer-defined memory module (ground truth corpus) to eliminate hallucination.
 
-Founder, Genomic Prediction, Inc. -- Advanced genetic testing, AI/ML on large genomic data sets. Pioneered polygenic screening of embryos in IVF, working with 200+ IVF clinics on 6 continents. https://lifeview.com/
+Founder, Genomic Prediction, Inc. -- Advanced genetic testing, AI/ML on large genomic data sets. Pioneered polygenic screening of embryos in IVF, working with 200+ IVF clinics on 6 continents. [https://lifeview.com/](https://lifeview.com/)
 
-Founder, Othram, Inc. -- Forensic application of DNA sequencing. Solved numerous cold and hot cases using genetic genealogy. https://othram.com/
+Founder, Othram, Inc. -- Forensic application of DNA sequencing. Solved numerous cold and hot cases using genetic genealogy. [https://othram.com/](https://othram.com/)
 
 Previously Senior Vice-President for Research and Innovation, Michigan State University. Grew annual research activity to $700M+ per annum. 
 
