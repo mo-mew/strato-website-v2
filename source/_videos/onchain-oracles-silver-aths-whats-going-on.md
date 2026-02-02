@@ -40,6 +40,7 @@ table_of_contents:
   Your browser does not support the audio element.
 </audio>
 
+
 ## Transcript
 
 <!-- TABLE_OF_CONTENTS -->
