@@ -19,7 +19,7 @@ As Head of Ecosystem at [BlockApps](https://blockapps.net), Bob is helping to dr
   url="/blog/bob-summerwill-joins-blockapps/"
   title="Bob Summerwill Joins BlockApps as Head of Ecosystem"
   img="/images/blockapps.net/2025.10.13/pow_summit.jpg"
-  description="Announcement that Bob Summerwill has joined BlockApps Head of Ecosystem."
+  description="Announcement that Bob Summerwill has joined BlockApps as Head of Ecosystem."
   author="Bob Summerwill"
   date="2025-01-13"
 %}
