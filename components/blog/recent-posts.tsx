@@ -9,10 +9,12 @@ import { categories } from "@/lib/blog-constants"
 
 interface RecentPostsProps {
   posts: Post[]
+  basePath?: string
+  availableCategories?: readonly string[]
 }
 
 const ALL = "All"
-const allCategories = [ALL, ...categories] as const
+const defaultCategories = [ALL, ...categories] as const
 const POSTS_PER_PAGE = 6
 
 /* ── Fuzzy helpers ─────────────────────────────────────────────── */
@@ -75,7 +77,8 @@ function scorePost(post: Post, tokens: string[]): number {
 
 /* ── Component ─────────────────────────────────────────────────── */
 
-export function RecentPosts({ posts }: RecentPostsProps) {
+export function RecentPosts({ posts, basePath = "/blog", availableCategories }: RecentPostsProps) {
+  const allCategories = availableCategories ?? defaultCategories
   const [activeCategory, setActiveCategory] = useState<string>(ALL)
   const [searchQuery, setSearchQuery] = useState("")
   const [currentPage, setCurrentPage] = useState(1)
@@ -163,7 +166,7 @@ export function RecentPosts({ posts }: RecentPostsProps) {
       {paginatedPosts.length > 0 ? (
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
           {paginatedPosts.map((post) => (
-            <PostCard key={post.slug} post={post} />
+            <PostCard key={post.slug} post={post} basePath={basePath} />
           ))}
         </div>
       ) : (
@@ -215,9 +218,9 @@ export function RecentPosts({ posts }: RecentPostsProps) {
   )
 }
 
-function PostCard({ post }: { post: Post }) {
+function PostCard({ post, basePath = "/blog" }: { post: Post; basePath?: string }) {
   return (
-    <Link href={`/blog/${post.slug}`} className="group block">
+    <Link href={`${basePath}/${post.slug}`} className="group block">
       {/* Thumbnail */}
       <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-[#d1d5db]">
         {post.img && (

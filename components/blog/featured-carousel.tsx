@@ -7,9 +7,10 @@ import type { Post } from "@/lib/blog-constants"
 
 interface FeaturedCarouselProps {
   posts: Post[]
+  basePath?: string
 }
 
-export function FeaturedCarousel({ posts }: FeaturedCarouselProps) {
+export function FeaturedCarousel({ posts, basePath = "/blog" }: FeaturedCarouselProps) {
   const [activeIndex, setActiveIndex] = useState(0)
 
   const advance = useCallback(() => {
@@ -30,7 +31,7 @@ export function FeaturedCarousel({ posts }: FeaturedCarouselProps) {
       <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:gap-12">
         {/* Cover image */}
         <Link
-          href={`/blog/${current.slug}`}
+          href={`${basePath}/${current.slug}`}
           className="group block w-full lg:w-3/5"
         >
           <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-white/10">
@@ -56,7 +57,7 @@ export function FeaturedCarousel({ posts }: FeaturedCarouselProps) {
             {current.categories}
           </span>
 
-          <Link href={`/blog/${current.slug}`}>
+          <Link href={`${basePath}/${current.slug}`}>
             <h2 className="text-2xl font-bold leading-snug text-white transition-colors hover:text-white/80 md:text-3xl text-balance">
               {current.title}
             </h2>
