@@ -89,6 +89,12 @@ export function Navbar() {
             Blog
           </Link>
           <Link
+            href="/video"
+            className="text-sm font-medium text-white transition-colors hover:text-white/80"
+          >
+            Videos
+          </Link>
+          <Link
             href="/team"
             className="text-sm font-medium text-white transition-colors hover:text-white/80"
           >
@@ -168,6 +174,13 @@ export function Navbar() {
                 onClick={toggleMenu}
               >
                 Blog
+              </Link>
+              <Link
+                href="/video"
+                className="text-3xl font-semibold text-[#1a1a2e] hover:text-[#243486]"
+                onClick={toggleMenu}
+              >
+                Videos
               </Link>
               <Link
                 href="/team"

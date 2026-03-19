@@ -6,10 +6,10 @@ import remarkGfm from "remark-gfm"
 import { ArrowLeft } from "lucide-react"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
-import { getNonVideoPosts, getPostBySlug } from "@/lib/posts"
+import { getVideoPosts, getPostBySlug } from "@/lib/posts"
 
 export async function generateStaticParams() {
-  const posts = getNonVideoPosts()
+  const posts = getVideoPosts()
   return posts.map((post) => ({ slug: post.slug }))
 }
 
@@ -20,14 +20,14 @@ export async function generateMetadata({
 }) {
   const { slug } = await params
   const post = getPostBySlug(slug)
-  if (!post) return { title: "Post Not Found" }
+  if (!post || post.categories !== "Videos") return { title: "Video Not Found" }
   return {
-    title: `${post.title} - Strato Nexus Blog`,
+    title: `${post.title} - STRATO Videos`,
     description: post.description,
   }
 }
 
-export default async function BlogPostPage({
+export default async function VideoPostPage({
   params,
 }: {
   params: Promise<{ slug: string }>
@@ -35,7 +35,7 @@ export default async function BlogPostPage({
   const { slug } = await params
   const post = getPostBySlug(slug)
 
-  if (!post) notFound()
+  if (!post || post.categories !== "Videos") notFound()
 
   return (
     <div className="relative min-h-screen bg-[#f9f9f9]">
@@ -57,11 +57,11 @@ export default async function BlogPostPage({
         {/* Back link */}
         <div className="mt-8">
           <Link
-            href="/blog"
+            href="/video"
             className="inline-flex items-center gap-1.5 text-sm font-medium text-[#243486] transition-colors hover:text-[#1a1a2e]"
           >
             <ArrowLeft size={16} />
-            Back to Blog
+            Back to Videos
           </Link>
         </div>
 
@@ -96,8 +96,8 @@ export default async function BlogPostPage({
             </div>
           </div>
 
-          {/* Video embed for video posts */}
-          {post.categories === "Videos" && post.videoUrl && (
+          {/* Video embed */}
+          {post.videoUrl && (
             <div className="mb-8 aspect-video w-full overflow-hidden rounded-2xl">
               <iframe
                 src={post.videoUrl}
@@ -105,17 +105,6 @@ export default async function BlogPostPage({
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 className="h-full w-full"
-              />
-            </div>
-          )}
-
-          {/* Cover image (non-video posts) */}
-          {!(post.categories === "Videos" && post.videoUrl) && post.img && (
-            <div className="mb-8 aspect-video w-full overflow-hidden rounded-2xl bg-[#d1d5db]">
-              <img
-                src={post.img}
-                alt={post.title}
-                className="h-full w-full object-cover"
               />
             </div>
           )}

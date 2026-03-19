@@ -117,3 +117,11 @@ export function getPostBySlug(slug: string): Post | undefined {
 export function getPostsByCategory(category: Category): Post[] {
   return getAllPosts().filter((post) => post.categories === category)
 }
+
+export function getVideoPosts(): Post[] {
+  return getAllPosts().filter((post) => post.categories === "Videos")
+}
+
+export function getNonVideoPosts(): Post[] {
+  return getAllPosts().filter((post) => post.categories !== "Videos")
+}

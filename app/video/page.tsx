@@ -2,17 +2,14 @@ import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { FeaturedCarousel } from "@/components/blog/featured-carousel"
 import { RecentPosts } from "@/components/blog/recent-posts"
-import { getNonVideoPosts } from "@/lib/posts"
+import { getVideoPosts } from "@/lib/posts"
 import { getBlurDataURL } from "@/lib/blur"
-import { categories } from "@/lib/blog-constants"
 import type { Post } from "@/lib/blog-constants"
 
-const blogCategories = ["All", ...categories.filter((c) => c !== "Videos")] as const
-
 export const metadata = {
-  title: "Blog - STRATO",
+  title: "Videos - STRATO",
   description:
-    "Latest updates, guides, and community news from the STRATO team.",
+    "Watch the latest videos, talks, and discussions from the STRATO team.",
 }
 
 async function withBlur(posts: Post[]): Promise<Post[]> {
@@ -24,8 +21,8 @@ async function withBlur(posts: Post[]): Promise<Post[]> {
   )
 }
 
-export default async function BlogPage() {
-  const allPosts = await withBlur(getNonVideoPosts())
+export default async function VideoPage() {
+  const allPosts = await withBlur(getVideoPosts())
   const featuredPosts = allPosts.slice(0, 3)
 
   return (
@@ -38,15 +35,15 @@ export default async function BlogPage() {
             <Navbar />
           </div>
 
-          {/* Blog heading */}
+          {/* Videos heading */}
           <div className="mt-10 mb-10">
-            <h1 className="text-5xl font-bold text-white md:text-6xl">Blog</h1>
+            <h1 className="text-5xl font-bold text-white md:text-6xl">Videos</h1>
           </div>
 
           {/* Featured carousel */}
           {featuredPosts.length > 0 && (
             <div className="pb-14">
-              <FeaturedCarousel posts={featuredPosts} />
+              <FeaturedCarousel posts={featuredPosts} basePath="/video" />
             </div>
           )}
         </div>
@@ -55,7 +52,7 @@ export default async function BlogPage() {
       {/* ── Recent Posts / white section ─────────────────────────── */}
       <div className="overflow-hidden rounded-b-[2.5rem] bg-white">
         <div className="mx-auto max-w-[1280px] px-4 md:px-8 lg:px-12">
-          <RecentPosts posts={allPosts} availableCategories={blogCategories} />
+          <RecentPosts posts={allPosts} basePath="/video" availableCategories={["All"]} />
         </div>
       </div>
 
