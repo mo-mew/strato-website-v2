@@ -161,7 +161,7 @@ function MobileAccordionItem({
               <a
                 key={child.label}
                 href={child.href}
-                className="text-xl font-medium text-[#243486]/80 hover:text-[#243486]"
+                className="text-3xl font-normal text-[#243486]/80 hover:text-[#243486]"
                 onClick={onClose}
                 {...linkProps}
               >
