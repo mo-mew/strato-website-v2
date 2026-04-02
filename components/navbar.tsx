@@ -61,7 +61,7 @@ function DropdownItem({
   const linkProps = external ? { target: "_blank", rel: "noopener noreferrer" } : {}
   return (
     <NavigationMenuPrimitive.Link asChild>
-      
+      <a
         href={href}
         className="group/item flex w-full items-center justify-between rounded-full px-4 py-3 text-[15px] font-semibold text-white transition-colors hover:bg-[#1a2761]"
         {...linkProps}
@@ -158,7 +158,7 @@ function MobileAccordionItem({
               ? { target: "_blank", rel: "noopener noreferrer" }
               : {}
             return (
-              
+              <a
                 key={child.label}
                 href={child.href}
                 className="text-xl font-medium text-[#243486]/80 hover:text-[#243486]"
@@ -250,7 +250,7 @@ export function Navbar() {
         <DesktopNav />
 
         {/* CTA */}
-        
+        <a
           href={EXTERNAL_LINKS.app}
           target="_blank"
           rel="noopener noreferrer"
@@ -323,7 +323,7 @@ export function Navbar() {
             })}
 
             <div className="mt-auto pt-8">
-              
+              <a
                 href={EXTERNAL_LINKS.app}
                 target="_blank"
                 rel="noopener noreferrer"
