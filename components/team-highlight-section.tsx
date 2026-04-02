@@ -38,29 +38,31 @@ function TeamHeadshot({
   const springY = useSpring(mouseY, { stiffness: 150, damping: 30, mass: 1 })
 
   return (
-    <motion.div
-      className={`relative overflow-hidden rounded-2xl bg-[#4a6cb3] ${className}`}
-      style={{ x: springX, y: springY, ...revealStyle(visible, delay) }}
-      onMouseMove={(e) => {
-        const rect = e.currentTarget.getBoundingClientRect()
-        const centerX = rect.left + rect.width / 2
-        const centerY = rect.top + rect.height / 2
-        mouseX.set(((e.clientX - centerX) / rect.width) * 12)
-        mouseY.set(((e.clientY - centerY) / rect.height) * 12)
-      }}
-      onMouseLeave={() => {
-        mouseX.set(0)
-        mouseY.set(0)
-      }}
-      whileHover={{ scale: 1.01, transition: { duration: 0.15, ease: "easeOut" } }}
-    >
-      <Image
-        src={member.image}
-        alt={member.name}
-        fill
-        className="object-cover object-top"
-      />
-    </motion.div>
+    <div className={className} style={revealStyle(visible, delay)}>
+      <motion.div
+        className="relative h-full w-full overflow-hidden rounded-2xl bg-[#4a6cb3]"
+        style={{ x: springX, y: springY }}
+        onMouseMove={(e) => {
+          const rect = e.currentTarget.getBoundingClientRect()
+          const centerX = rect.left + rect.width / 2
+          const centerY = rect.top + rect.height / 2
+          mouseX.set(((e.clientX - centerX) / rect.width) * 12)
+          mouseY.set(((e.clientY - centerY) / rect.height) * 12)
+        }}
+        onMouseLeave={() => {
+          mouseX.set(0)
+          mouseY.set(0)
+        }}
+        whileHover={{ scale: 1.01, transition: { duration: 0.15, ease: "easeOut" } }}
+      >
+        <Image
+          src={member.image}
+          alt={member.name}
+          fill
+          className="object-cover object-top"
+        />
+      </motion.div>
+    </div>
   )
 }
 
@@ -84,7 +86,7 @@ function TextBlock({ visible, className = "" }: { visible: boolean; className?: 
       </h2>
       <div className="space-y-4 text-base leading-snug text-white/80 md:text-lg">
         <p>
-          The Strato Core team has been battle-tested for 10 years — since the earliest days of Ethereum.
+          The STRATO Core team has been battle-tested for 10 years — since the earliest days of Ethereum.
         </p>
         <p>
           The team built one of Ethereum&apos;s six original mainnet-compatible clients in 2014, the Haskell client that still powers the chain today. They launched the first Blockchain-as-a-Service on Microsoft Azure at DEVCON1 in 2015, and co-founded the Enterprise Ethereum Alliance.
@@ -227,7 +229,7 @@ export function TeamHighlightSection() {
             </h2>
             <div className="space-y-4 text-base leading-snug text-white/80 md:text-lg">
               <p>
-                The Strato Core team has been battle-tested for 10 years — since the earliest days of Ethereum.
+                The STRATO Core team has been battle-tested for 10 years — since the earliest days of Ethereum.
               </p>
               <p>
                 The team built one of Ethereum&apos;s six original mainnet-compatible clients in 2014, the Haskell client that still powers the chain today. They launched the first Blockchain-as-a-Service on Microsoft Azure at DEVCON1 in 2015, and co-founded the Enterprise Ethereum Alliance.
