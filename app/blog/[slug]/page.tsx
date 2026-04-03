@@ -7,11 +7,11 @@ import { ArrowLeft } from "lucide-react"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { JsonLd } from "@/components/json-ld"
-import { getAllPostsAsync, getPostBySlugAsync } from "@/lib/posts"
+import { getAllPosts, getPostBySlug } from "@/lib/posts"
 import { articleJsonLd, videoObjectJsonLd, breadcrumbJsonLd } from "@/lib/seo"
 
 export async function generateStaticParams() {
-  const posts = await getAllPostsAsync()
+  const posts = await getAllPosts()
   return posts.map((post) => ({ slug: post.slug }))
 }
 
@@ -21,7 +21,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>
 }) {
   const { slug } = await params
-  const post = await getPostBySlugAsync(slug)
+  const post = await getPostBySlug(slug)
   if (!post) return { title: "Post Not Found" }
   return {
     title: post.title,
@@ -54,7 +54,7 @@ export default async function BlogPostPage({
   params: Promise<{ slug: string }>
 }) {
   const { slug } = await params
-  const post = await getPostBySlugAsync(slug)
+  const post = await getPostBySlug(slug)
 
   if (!post) notFound()
 

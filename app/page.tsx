@@ -2,7 +2,7 @@ import { HeroSection } from "@/components/hero-section"
 import { WelcomeSection } from "@/components/welcome-section"
 import { TeamHighlightSection } from "@/components/team-highlight-section"
 import { StratoNewsSection } from "@/components/strato-news-section"
-import { getNonVideoPostsAsync } from "@/lib/posts"
+import { getNonVideoPosts } from "@/lib/posts"
 import { HardestAssetsSection } from "@/components/hardest-assets-section"
 import { StratoRewardsSection } from "@/components/strato-rewards-section"
 import { RealYieldSection } from "@/components/real-yield-section"
@@ -20,7 +20,7 @@ const FEATURED_SLUGS = [
 ]
 
 export default async function Home() {
-  const allPosts = await getNonVideoPostsAsync()
+  const allPosts = await getNonVideoPosts()
   const latestPosts = FEATURED_SLUGS.map((slug) =>
     allPosts.find((post) => post.slug === slug)
   ).filter(Boolean)
