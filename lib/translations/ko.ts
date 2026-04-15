@@ -88,16 +88,16 @@ const ko = {
     "USDST가 대출 시장을 지원하는 동안 지속적으로 포인트 획득",
   "rewards.method2Label": "차입",
   "rewards.method2Description":
-    "자산을 담보로 대출을 받고 차입하면서 포인트를 획득하세요.",
+    "자산을 담보로 대출을 받고 차입하면서 포인트를 획득하세.",
   "rewards.method3Label": "스왑 & 민트",
   "rewards.method3Description":
     "CDP를 통해 거래하거나 USDST를 민트할 때마다 포인트 획득.",
   "rewards.method4Label": "유동성 제공",
   "rewards.method4Description":
-    "생태계에 유동성을 공급하고 최고 포인트 리워드를 해제하세요.",
+    "생태계에 유동성을 공급하고 최고 포인트 리워드를 해제하세.",
   "rewards.method5Label": "친구 추천",
   "rewards.method5Description":
-    "다른 사람을 STRATO에 초대하고 그들이 생성한 포인트의 일부를 획득하세요.",
+    "다른 사람을 STRATO에 초대하고 그들이 생성한 포인트의 일부를 획득하세.",
   "rewards.cta": "리워드 획득 시작",
   "rewards.banner":
     "생태계 전체에서 이미 200만 이상의 STRATO 포인트가 획득되었으며 TGE가 빠르게 다가오고 있습니다.",
