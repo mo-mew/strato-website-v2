@@ -12,6 +12,7 @@ const ko = {
   "nav.faq": "자주 묻는 질문",
   "nav.blockexplorer": "블록 익스플로러",
   "nav.blog": "블로그",
+  "nav.communityPartnership": "커뮤니티 파트너십",
   "nav.launchApp": "앱 실행",
 
   // Hero

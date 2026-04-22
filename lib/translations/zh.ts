@@ -12,6 +12,7 @@ const zh = {
   "nav.faq": "常见问题",
   "nav.blockexplorer": "区块浏览器",
   "nav.blog": "博客",
+  "nav.communityPartnership": "社区合作",
   "nav.launchApp": "启动应用",
 
   // Hero

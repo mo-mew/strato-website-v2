@@ -12,6 +12,7 @@ const ja = {
   "nav.faq": "よくある質問",
   "nav.blockexplorer": "ブロックエクスプローラー",
   "nav.blog": "ブログ",
+  "nav.communityPartnership": "コミュニティパートナーシップ",
   "nav.launchApp": "アプリを起動",
 
   // Hero

@@ -12,6 +12,7 @@ const fr = {
   "nav.faq": "FAQ",
   "nav.blockexplorer": "Explorateur de Blocs",
   "nav.blog": "Blog",
+  "nav.communityPartnership": "Partenariat Communautaire",
   "nav.launchApp": "Lancer l'App",
 
   // Hero
