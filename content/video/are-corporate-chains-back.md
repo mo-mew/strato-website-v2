@@ -461,7 +461,7 @@ Their language seems pretty good to me, actually, but no one uses it. We're stuc
 *(Bob - so 'their language' is [Move](https://en.wikipedia.org/wiki/Diem_(digital_currency)#Move) whose development has continued and evolved within the two primary Diem technical successor projects, [Aptos](https://github.com/move-language/move-on-aptos) and [Sui](https://github.com/move-language/move-sui))*
 
 [[22:56]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1376s) **Victor:**
-Well, and, you know, like, I think the [EVM](https://ethereum.org/developers/docs/evm/) has become the standard, right? Like that's just, you know, I mean, [Redwan](https://x.com/RedoudouM), was mentioning that [last week]({{ '/videos/institutions-want-tokens-how-is-ethereum-keeping-up/' | relative_url }}). And I think that that is true, basically, to a certain degree.
+Well, and, you know, like, I think the [EVM](https://ethereum.org/developers/docs/evm/) has become the standard, right? Like that's just, you know, I mean, [Redwan](https://x.com/RedoudouM), was mentioning that [last week](/videos/institutions-want-tokens-how-is-ethereum-keeping-up/). And I think that that is true, basically, to a certain degree.
 
 [[23:08]](https://www.youtube.com/watch?v=2BR6nodzzos&t=1388s) **Bob:**
 Yeah, yeah. I mean, I think it's the [JavaScript](https://en.wikipedia.org/wiki/JavaScript). It's the [C](https://en.wikipedia.org/wiki/C_(programming_language))).

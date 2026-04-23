@@ -129,7 +129,7 @@ And it's really interesting because one of the things I think that stands out in
 [[11:52]](https://www.youtube.com/watch?v=rSfw2sgHVJE&t=712s) **Victor:**
 Now, what you're seeing on your screen right now is an overview of the new V2 application. It's been basically the focus of our efforts throughout this year, and there have been significant changes to it, which I'll show in one second, from the earlier iteration of our contest in July. So, thank you for everyone that provided feedback, and that was immensely useful.
 
-![Screenshot of Spaces]({{ '/images/personal/bob-summerwill/streamyard.ai/2025.09.17/screenshot-of-spaces.png' | relative_url }})
+![Screenshot of Spaces](/images/personal/bob-summerwill/streamyard.ai/2025.09.17/screenshot-of-spaces.png)
 
 <a id="prizes"></a>
 
@@ -157,7 +157,7 @@ The way the process works is slightly different. So, I just want to kind of walk
 [[13:56]](https://www.youtube.com/watch?v=rSfw2sgHVJE&t=836s) **Victor:**
 So, if you look here, I'm going to show you how you do that. You go to the deposits page and we're providing two contest specific assets. One we call mETH for Mercata ETH and you bring that in by bridging.
 
-![Screenshot of Spaces]({{ '/images/personal/bob-summerwill/streamyard.ai/2025.09.17/screenshot-of-spaces2.png' | relative_url }})
+![Screenshot of Spaces](/images/personal/bob-summerwill/streamyard.ai/2025.09.17/screenshot-of-spaces2.png)
 
 [[14:12]](https://www.youtube.com/watch?v=rSfw2sgHVJE&t=852s) **Victor:**
 So, you use the [Sepolia](https://ethereum.org/developers/docs/networks/#sepolia) and you can bridge it in on the Mercata network. Now, when you see this and when you bridge it and connect it to your wallet, you'll see two confirmations.

@@ -246,7 +246,7 @@ And there's also just, I mean, the feel, [TOKEN](https://token2049.com) is a lit
 
 You could take yourself as an astronaut with [Justin Sun](https://en.wikipedia.org/wiki/Justin_Sun) pictures of the clock as one. And like lots of, like, shiny outfits. And I think the world's tallest man was there.
 
-![Bob and Justin Sun at TOKEN2049]({{ '/images/personal/bob-summerwill/photos/2025.10.08/bob-and-justin-sun.jpeg' | relative_url }})
+![Bob and Justin Sun at TOKEN2049](/images/personal/bob-summerwill/photos/2025.10.08/bob-and-justin-sun.jpeg)
 
 Sadly, in a wheelchair. I think he has a hard time standing. For at least for long periods of time.
 
@@ -336,7 +336,7 @@ Most of these treasury companies are an existing publicly traded company. And th
 
 You know, like there was a panel, [Tom Lee](https://en.wikipedia.org/wiki/Thomas_Lee_(analyst)) gave a lot of like numbers on how big [his digital asset treasury company](https://www.bitminetech.io/) is, what chunk of ETH it holds, you know, now what the trend is, all that sort of thing. And they've, I guess, [Michael Saylor](https://en.wikipedia.org/wiki/Michael_J._Saylor) kind of pioneered, I don't know if he was there, I don't think he was, some of the financial engineering that kind of creatively let him acquire as much Bitcoin as possible. And all these folks are then kind of in the, I would argue like part of the TradFi mindset, people make complicated products that sort of favor the house in a sense.
 
-![Tom Lee at TOKEN2049]({{ '/images/personal/bob-summerwill/photos/2025.10.01/tom-lee-token2049.jpeg' | relative_url }})
+![Tom Lee at TOKEN2049](/images/personal/bob-summerwill/photos/2025.10.01/tom-lee-token2049.jpeg)
 
 So that, you know, no matter what, like the client has an idea, but the institution does okay, right? And some analog of that is going on, you know, people are purchasing, like a lot of the time you would just want to hold tokens directly as opposed to invest in a digital assets treasury. I guess I think the digital asset treasuries may be better than the ETFs.
 
@@ -519,7 +519,7 @@ I wonder if that's changed. It used to be like, the joke that I've both experien
 [[32:25]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1945s) **Bob:**
 There was plenty of [Charles](https://en.wikipedia.org/wiki/Charles_Hoskinson), but no [Ripple](https://ripple.com/)-ers.
 
-![Charles Hoskinson at TOKEN2049]({{ '/images/personal/bob-summerwill/photos/2025.10.01/charles-token2049.jpeg' | relative_url }})
+![Charles Hoskinson at TOKEN2049](/images/personal/bob-summerwill/photos/2025.10.01/charles-token2049.jpeg)
 
 [[32:32]](https://www.youtube.com/watch?v=15MltoqMjZU&t=1952s) **Kieren:**
 Yeah, I wonder. I think [BNB](https://en.wikipedia.org/wiki/Binance#BNB) flipped [XRP](https://en.wikipedia.org/wiki/XRP_Ledger) recently.
