@@ -45,19 +45,19 @@ The discussion traces a direct line from those early experiments through DTCC, s
 
 **[[00:35]](https://www.youtube.com/watch?v=68FoOE8sztw&t=35s) Kieren James-Lubin:** It feels like it now, right?
 
-**[[00:37]](https://www.youtube.com/watch?v=68FoOE8sztw&t=37s) Victor Wong:** It definitely does. So we're talking about building enterprise blockchain with Microsoft. And just to set the context for everyone, STRATO, BlockApps and Microsoft have had a really long relationship. It goes all the way back to 2015, when Microsoft was building out the blockchain layer of Azure. They found us to be their partner, and that became the first major partnership of the Ethereum ecosystem, which we launched back at Devcon 1. Unfortunately, York had to miss that, but was instrumental in making it happen.
+**[[00:37]](https://www.youtube.com/watch?v=68FoOE8sztw&t=37s) Victor Wong:** It definitely does. So we're talking about building enterprise blockchain with Microsoft. And just to set the context for everyone, STRATO, BlockApps and Microsoft have had a really long relationship. It goes all the way back to 2015, when Microsoft was building out the blockchain layer of Azure. They found us to be their partner, and that became the first major partnership of the Ethereum ecosystem, which we launched back at Devcon 1. Unfortunately, Yorke had to miss that, but was instrumental in making it happen.
 
 Since then, in an industry with huge amounts of turnover and change, I'm talking to two people who have been building from the beginning and are still building today. So I want to give you guys a little bit of your bio, even though I know you're uncomfortable with it, but it was really hard to actually narrow the accomplishments you guys have done over the last 11 years.
 
 So I'm going to start with you, Kieren. Kieren is founder and president and CEO of BlockApps. He's one of the early Ethereum contributors, working on the Haskell implementation and head of Ethereum's cryptocurrency research group. He founded BlockApps, launched the category of blockchain as a service with Microsoft, and kickstarted enterprise adoption of Ethereum without requiring deep protocol experience. He's a founding member of the Enterprise Ethereum Alliance.
 
-Wow, this is quite a lot of stuff. And under his leadership, BlockApps became the only blockchain platform available across all major cloud providers and built the first RWA projects for Fortune 500 companies, consortiums, and governments. BlockApps' latest project is STRATO, which is bringing DeFi to hard assets such as precious metals. So that's Kieren, and now I'm on to you, York.
+Wow, this is quite a lot of stuff. And under his leadership, BlockApps became the only blockchain platform available across all major cloud providers and built the first RWA projects for Fortune 500 companies, consortiums, and governments. BlockApps' latest project is STRATO, which is bringing DeFi to hard assets such as precious metals. So that's Kieren, and now I'm on to you, Yorke.
 
 **[[02:36]](https://www.youtube.com/watch?v=68FoOE8sztw&t=156s) Yorke Rhodes:** That's amazing, by the way.
 
-**[[02:39]](https://www.youtube.com/watch?v=68FoOE8sztw&t=159s) Victor Wong:** Okay, York Rhodes the Third is the co-founder of blockchain at Microsoft. So York co-founded the blockchain work at Microsoft all the way back in 2015, the same year he brought BlockApps onto Azure. Over the decade that followed, he built some of the most consequential enterprise blockchain deployments in the world. His team's work on the Microsoft cloud supply chain used blockchain to digitize industries across many industries.
+**[[02:39]](https://www.youtube.com/watch?v=68FoOE8sztw&t=159s) Victor Wong:** Okay, Yorke Rhodes III is the co-founder of blockchain at Microsoft. So Yorke co-founded the blockchain work at Microsoft all the way back in 2015, the same year he brought BlockApps onto Azure. Over the decade that followed, he built some of the most consequential enterprise blockchain deployments in the world. His team's work on the Microsoft cloud supply chain used blockchain to digitize industries across many industries.
 
-Today, York is Director of Traceability at Microsoft, focusing on improving labor compliance across global supply chains, is the co-founder of the X402 Foundation, which is building the standard for agentic commerce on crypto, and he is also a professor at NYU and co-founder at the NYU Ethical Tech Lab.
+Today, Yorke is Director of Traceability at Microsoft, focusing on improving labor compliance across global supply chains, is the co-founder of the X402 Foundation, which is building the standard for agentic commerce on crypto, and he is also a professor at NYU and co-founder at the NYU Ethical Tech Lab.
 
 I got through it, but that's a lot of stuff, and that's like the tip of the iceberg of the achievements.
 
@@ -67,7 +67,7 @@ I got through it, but that's a lot of stuff, and that's like the tip of the iceb
 
 ### Why Microsoft Chose Ethereum
 
-**[[03:49]](https://www.youtube.com/watch?v=68FoOE8sztw&t=229s) Victor Wong:** Yeah, exactly. I didn't even include that. You were one of the founding board members of the EEA. But so let's go right back to 2015. And I'll start with you, York. You co-founded the blockchain work at Microsoft, and when you were evaluating back in 2015, how did you choose Ethereum and how did you choose to work with us? What were those conversations?
+**[[03:49]](https://www.youtube.com/watch?v=68FoOE8sztw&t=229s) Victor Wong:** Yeah, exactly. I didn't even include that. You were one of the founding board members of the EEA. But so let's go right back to 2015. And I'll start with you, Yorke. You co-founded the blockchain work at Microsoft, and when you were evaluating back in 2015, how did you choose Ethereum and how did you choose to work with us? What were those conversations?
 
 **[[04:17]](https://www.youtube.com/watch?v=68FoOE8sztw&t=257s) Yorke Rhodes:** So I went down this rabbit hole myself and just through my personal research, I arrived at Ethereum after just navigating through like, where are the smart people? What are they doing? It has to be more than Bitcoin. And that sort of got me to, okay, this is pretty interesting from a tech stack engineering perspective. And actually Marley Gray, who I co-founded the blockchain work with in 2015, had been working closely with ConsenSys already and you guys. And we divided up the work essentially in August of 2015. I took all of the partner relationships so he could focus on his financial services customers where he was already seeing some traction from some of the ones that were leaning in more deliberately. I mean, that's also kind of amazing, like where we are now at this point.
 
@@ -97,7 +97,7 @@ And I think in the first year after I brought one of my full-time engineering co
 
 **[[09:22]](https://www.youtube.com/watch?v=68FoOE8sztw&t=562s) Kieren James-Lubin:** Oh yeah. It's hard to think back. I mean, we were just running binaries at that time, primarily. So we did actually get a Windows Server build through, but most of the time we targeted Linux.
 
-And I think one of the big innovations Satya made at that time, to York's point, was the sort of operating system almost moved into the hardware. The cloud is one big giant operating system, if you will. And then Linux became almost, they became virtual machines sitting on top of that giant operating system. And it all kind of worked cleanly together. So mostly what we had to do just translated over and amounted to sort of packaging, putting things together, etc.
+And I think one of the big innovations Satya made at that time, to Yorke's point, was the sort of operating system almost moved into the hardware. The cloud is one big giant operating system, if you will. And then Linux became almost, they became virtual machines sitting on top of that giant operating system. And it all kind of worked cleanly together. So mostly what we had to do just translated over and amounted to sort of packaging, putting things together, etc.
 
 And I did a live demo, and we made fun of the Brits a little bit because the Internet was not so good during the live demo. So I was very worried. We had a dividend demo set up where we named Marley as one of the recipients of cash disbursement. And that all went really great.
 
@@ -153,7 +153,7 @@ And yeah, it was a bumpy journey. I mean, there were certainly times when people
 
 **[[15:56]](https://www.youtube.com/watch?v=68FoOE8sztw&t=956s) Yorke Rhodes:** Yeah.
 
-**[[15:57]](https://www.youtube.com/watch?v=68FoOE8sztw&t=957s) Kieren James-Lubin:** The state of all of the names and so on. But I remember, yeah, we were at Microsoft offices in Midtown, maybe on like a Friday. And I did some live coding exercise. I think Victor was there, but maybe Slazas was there, James as well. And I think you were there too, York, though I am not certain. It could have been like a Marley being in town one. And we sort of talked about some workflow within the bank.
+**[[15:57]](https://www.youtube.com/watch?v=68FoOE8sztw&t=957s) Kieren James-Lubin:** The state of all of the names and so on. But I remember, yeah, we were at Microsoft offices in Midtown, maybe on like a Friday. And I did some live coding exercise. I think Victor was there, but maybe Slazas was there, James as well. And I think you were there too, Yorke, though I am not certain. It could have been like a Marley being in town one. And we sort of talked about some workflow within the bank.
 
 **[[16:26]](https://www.youtube.com/watch?v=68FoOE8sztw&t=986s) Yorke Rhodes:** Right. Yeah, I do remember that, actually.
 
@@ -165,7 +165,7 @@ And yeah, it was a bumpy journey. I mean, there were certainly times when people
 
 **[[16:51]](https://www.youtube.com/watch?v=68FoOE8sztw&t=1011s) Victor Wong:** But then it...
 
-**[[16:52]](https://www.youtube.com/watch?v=68FoOE8sztw&t=1012s) Kieren James-Lubin:** Yeah, real intensity coming out of these organizations. There was excitement, there was fear. I remember at the... we had a meeting, this one you weren't involved with, York, but kind of similar feeling with a different innovative big Latin bank, during the DAO hack. And we could talk about nothing but the DAO hack, even though we were kind of going through, talking about all the enterprise settlement use cases, etc.
+**[[16:52]](https://www.youtube.com/watch?v=68FoOE8sztw&t=1012s) Kieren James-Lubin:** Yeah, real intensity coming out of these organizations. There was excitement, there was fear. I remember at the... we had a meeting, this one you weren't involved with, Yorke, but kind of similar feeling with a different innovative big Latin bank, during the DAO hack. And we could talk about nothing but the DAO hack, even though we were kind of going through, talking about all the enterprise settlement use cases, etc.
 
 But it's taken some time, right? And we had been, Microsoft too, us heavily on the consortium permission side, serving all manner of... and that's still there, but much less. The corporate energy has just shifted towards, can I use this in practice? And we've got multinationals moving pretty good volumes of stables around the world finally. It's gotten boring.
 
@@ -189,7 +189,7 @@ Long term, I was always a huge believer that the value case of distributed decen
 
 ### Microsoft Cloud Supply Chain
 
-**[[20:21]](https://www.youtube.com/watch?v=68FoOE8sztw&t=1221s) Victor Wong:** Yeah. And on that point, there's been this, people are talking like RWAs are a new thing, but really we were doing supply chain projects where we were tokenizing real world assets back from the beginning. And York, I know you guys in the Microsoft cloud supply chain won a Gold Alexander Hamilton Treasury Award for a project. If you could talk a little bit about that project.
+**[[20:21]](https://www.youtube.com/watch?v=68FoOE8sztw&t=1221s) Victor Wong:** Yeah. And on that point, there's been this, people are talking like RWAs are a new thing, but really we were doing supply chain projects where we were tokenizing real world assets back from the beginning. And Yorke, I know you guys in the Microsoft cloud supply chain won a Gold Alexander Hamilton Treasury Award for a project. If you could talk a little bit about that project.
 
 **[[20:52]](https://www.youtube.com/watch?v=68FoOE8sztw&t=1252s) Yorke Rhodes:** Yeah, yeah, absolutely.
 
@@ -227,7 +227,7 @@ Because we had the signal from every transition point of these high-value assets
 
 **[[24:37]](https://www.youtube.com/watch?v=68FoOE8sztw&t=1477s) Victor Wong:** We should say physical resources.
 
-**[[24:39]](https://www.youtube.com/watch?v=68FoOE8sztw&t=1479s) Kieren James-Lubin:** Physical mining. Yes, physical. They're not mining Bitcoin, maybe a little bit now, who knows. They have, of course, big commodity trading desks. So after this project I was told that everyone started buying and trading ETH. But so yeah, we did deploy on Azure, BHP being a big Azure customer, and it was much earlier but much as York described, a traceability mechanism for their core sampling. So basically when they drill into the earth, they assess viability by sampling, and that tells them where to invest. And these samples go through a pretty complex supply chain, maybe not quite at a data center level. They're a long-lived asset that's very valuable, that touches lots of different parties, and that's what you find.
+**[[24:39]](https://www.youtube.com/watch?v=68FoOE8sztw&t=1479s) Kieren James-Lubin:** Physical mining. Yes, physical. They're not mining Bitcoin, maybe a little bit now, who knows. They have, of course, big commodity trading desks. So after this project I was told that everyone started buying and trading ETH. But so yeah, we did deploy on Azure, BHP being a big Azure customer, and it was much earlier but much as Yorke described, a traceability mechanism for their core sampling. So basically when they drill into the earth, they assess viability by sampling, and that tells them where to invest. And these samples go through a pretty complex supply chain, maybe not quite at a data center level. They're a long-lived asset that's very valuable, that touches lots of different parties, and that's what you find.
 
 **[[25:29]](https://www.youtube.com/watch?v=68FoOE8sztw&t=1529s) Yorke Rhodes:** Yeah, so just tune in, billions of dollars valuable.
 
@@ -255,7 +255,7 @@ So yeah, and it's infused everything. I mean, I think we still have, in part eve
 
 ### World Bank Blockchain Bond
 
-**[[27:57]](https://www.youtube.com/watch?v=68FoOE8sztw&t=1677s) Victor Wong:** And on that note, tokenized bonds are very exciting right now. York, you did one of the first big tokenized bond projects with the World Bank blockchain bond. What did the team have to do to create that and be a first mover in that sort of area?
+**[[27:57]](https://www.youtube.com/watch?v=68FoOE8sztw&t=1677s) Victor Wong:** And on that note, tokenized bonds are very exciting right now. Yorke, you did one of the first big tokenized bond projects with the World Bank blockchain bond. What did the team have to do to create that and be a first mover in that sort of area?
 
 **[[28:20]](https://www.youtube.com/watch?v=68FoOE8sztw&t=1700s) Yorke Rhodes:** Great question. Just one second. So that project was very specifically done by the World Bank, from the World Bank treasury specifically. So that was actually kind of a cool project to be able to work with the treasury of the World Bank.
 
@@ -329,7 +329,7 @@ If you take that insight and you carry it through — okay, what about Treasurie
 
 **[[39:06]](https://www.youtube.com/watch?v=68FoOE8sztw&t=2346s) Kieren James-Lubin:** Some are hard. If they're very unique, like homes, it's a little challenging, you have to assess them. But gold and silver, they've been money for as long as there's been money. So it's been kind of like a real winner for us. And we do lots of other stuff too. So we have some of the X stocks now owned by Kraken. They're the tokenizer on the platform. We take ETH, we'll take DeFi-native Bitcoin. It's really any good liquid asset that you want to keep — we extend credit against. And this has been, there's just tremendous demand for this. So kind of a meandering journey. But again, the whole time, just like, what are people going to use? What do they want, really?
 
-**[[39:53]](https://www.youtube.com/watch?v=68FoOE8sztw&t=2393s) Victor Wong:** Exactly. Well, and on that note, I want to just touch base. We've talked a lot about the historical perspective, but what is exciting you most about the future of the blockchain space? York, I know you're working on X402 too, bringing together AI and crypto. What are the most exciting developments happening in the blockchain crypto space now?
+**[[39:53]](https://www.youtube.com/watch?v=68FoOE8sztw&t=2393s) Victor Wong:** Exactly. Well, and on that note, I want to just touch base. We've talked a lot about the historical perspective, but what is exciting you most about the future of the blockchain space? Yorke, I know you're working on X402 too, bringing together AI and crypto. What are the most exciting developments happening in the blockchain crypto space now?
 
 <a id="ai-agents-x402-and-whats-next"></a>
 
@@ -355,7 +355,7 @@ Yeah. I mean, that to me, that's exciting. AI in general is exciting. I mean, I'
 
 **[[44:06]](https://www.youtube.com/watch?v=68FoOE8sztw&t=2646s) Victor Wong:** Yeah. And Kieren, what are you excited about? Future ones?
 
-**[[44:10]](https://www.youtube.com/watch?v=68FoOE8sztw&t=2650s) Kieren James-Lubin:** Oh, man. Well, let me touch quickly on York's comment. I'll bring it home. So one thing that's very interesting about agents, especially the latest models and good harnesses, they have this way of routing through... like, I give the agent a goal, and sometimes you find it go in there and start editing config files and yada yada yada, and you kind of turn around and you're like, whoa, whoa, whoa, that wasn't quite what I intended. You did... they didn't need to log in as root and... They have this way of breaking containment a little bit. Right?
+**[[44:10]](https://www.youtube.com/watch?v=68FoOE8sztw&t=2650s) Kieren James-Lubin:** Oh, man. Well, let me touch quickly on Yorke's comment. I'll bring it home. So one thing that's very interesting about agents, especially the latest models and good harnesses, they have this way of routing through... like, I give the agent a goal, and sometimes you find it go in there and start editing config files and yada yada yada, and you kind of turn around and you're like, whoa, whoa, whoa, that wasn't quite what I intended. You did... they didn't need to log in as root and... They have this way of breaking containment a little bit. Right?
 
 And they still have a hard time with captchas. I'm sure they're going to get there. But sometimes I have my OpenClaw, it sends some emails for me from time to time. It has a very low limit credit card, believe it or not.
 
@@ -367,7 +367,7 @@ But the Internet has been set up to be very bot-unfriendly, and now we may want 
 
 But bringing it back to us, we're getting to feel like, a few years ago there was true believers and hope and "we're all in this together." And now it's getting to be a competitive, mature industry that's serious. And I think we still have 10 or 100x adoption to go from here. Maybe not... I'm not speaking about market caps and prices and all that sort of thing.
 
-And this is maybe the good part. There's a lot of fun from the early days, but there's a whole lot ahead of us. I remember, York, you were a question in 2014, 2015 when we first started circling, and 2015 when we started going, we thought we were too late. Probably a lot more ahead.
+And this is maybe the good part. There's a lot of fun from the early days, but there's a whole lot ahead of us. I remember, Yorke, you were a question in 2014, 2015 when we first started circling, and 2015 when we started going, we thought we were too late. Probably a lot more ahead.
 
 **[[46:52]](https://www.youtube.com/watch?v=68FoOE8sztw&t=2812s) Yorke Rhodes:** No, no, I agree with you. Like, this is an exciting time. I think the Internet's changing and this technology is at a really interesting inflection point in that happening. So yeah, it may get a little more boring, but I think it's actually just the start of the boring.
 
@@ -375,14 +375,14 @@ And this is maybe the good part. There's a lot of fun from the early days, but t
 
 ### Wrap-Up
 
-**[[47:15]](https://www.youtube.com/watch?v=68FoOE8sztw&t=2835s) Victor Wong:** Yeah. On that note, and on behalf of the community, I want to thank you both for continuing to build and drive these efforts. I think, having the front row seat, I know how hard it's been to get to where we're at, and like you said, there's still a long way to go. Where can we find out about your work and what you're doing? York, where can we learn about all the interesting things you're working on?
+**[[47:15]](https://www.youtube.com/watch?v=68FoOE8sztw&t=2835s) Victor Wong:** Yeah. On that note, and on behalf of the community, I want to thank you both for continuing to build and drive these efforts. I think, having the front row seat, I know how hard it's been to get to where we're at, and like you said, there's still a long way to go. Where can we find out about your work and what you're doing? Yorke, where can we learn about all the interesting things you're working on?
 
-**[[47:39]](https://www.youtube.com/watch?v=68FoOE8sztw&t=2859s) Yorke Rhodes:** Yeah, I mean, I would say I've been posting more deliberately on LinkedIn than others, but I also post on X still under York Rhodes, and the only... you'll see me there. York Rhodes. And on LinkedIn, the same thing. Although just make sure it's the Third, because my son is in the industry as well.
+**[[47:39]](https://www.youtube.com/watch?v=68FoOE8sztw&t=2859s) Yorke Rhodes:** Yeah, I mean, I would say I've been posting more deliberately [on LinkedIn](https://www.linkedin.com/in/yorkerhodes/) than others, but I also post on X still [under Yorke Rhodes](https://x.com/yorkerhodes), and the only... you'll see me there. Yorke Rhodes. And on LinkedIn, the same thing. Although just make sure it's the Third, because [my son](https://x.com/0xyorke) is in the industry as well.
 
 **[[48:04]](https://www.youtube.com/watch?v=68FoOE8sztw&t=2884s) Victor Wong:** Yes. And Kieren, where can people find out about all the things you're doing?
 
-**[[48:09]](https://www.youtube.com/watch?v=68FoOE8sztw&t=2889s) Kieren James-Lubin:** Yep. So STRATO Nexus for the project, app.stratonexus for the app. And I'm KJamesLubin on Twitter, probably most active, a little bit of LinkedIn. We have a Telegram too that folks can join.
+**[[48:09]](https://www.youtube.com/watch?v=68FoOE8sztw&t=2889s) Kieren James-Lubin:** Yep. So [strato.nexus](https://strato.nexus) for the project, [app.strato.nexus](https://app.strato.nexus) for the app. And I'm [kjameslubin on Twitter](https://x.com/kjameslubin), probably most active, a little [bit of LinkedIn](https://www.linkedin.com/in/kjameslubin/). We [have a Telegram](https://t.me/strato_net) too that folks can join.
 
 **[[48:25]](https://www.youtube.com/watch?v=68FoOE8sztw&t=2905s) Victor Wong:** Okay, well, thank you very much for joining, and I know we're overtime already, but thank you for your time today.
 
-**[[48:31]](https://www.youtube.com/watch?v=68FoOE8sztw&t=2911s) Kieren James-Lubin:** Great to see you virtually, York. See you soon, I hope.
+**[[48:31]](https://www.youtube.com/watch?v=68FoOE8sztw&t=2911s) Kieren James-Lubin:** Great to see you virtually, Yorke. See you soon, I hope.
