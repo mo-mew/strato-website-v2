@@ -6,29 +6,36 @@ import { motion, useMotionValue, useSpring } from "framer-motion"
 import { useReveal, revealStyle } from "@/hooks/use-reveal"
 import { useTranslation } from "@/lib/i18n"
 import type { TranslationKey } from "@/lib/translations"
+import { LottiePlayer } from "@/components/lottie-player"
 
 const features: {
   labelKey: TranslationKey
-  img: string
+  img?: string
+  /** Path to lottie animation (.json or .lottie - auto-detected) */
+  lottieSrc?: string
   alt: string
 }[] = [
   {
     labelKey: "hardestAssets.feature1",
+    lottieSrc: "/lotties/hardest-assets-1.lottie",
     img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Physical%20Backing%20Graphic%403x-uv3rfppXvaZzbvVTL9C17g8P8Zsba4.png",
     alt: "Smartphone displaying gold and silver bars with a 1:1 badge",
   },
   {
     labelKey: "hardestAssets.feature2",
+    lottieSrc: "/lotties/hardest-assets-2.lottie",
     img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Monthly%20Audits%20Graphic%403x-blyUuyzc3c5jMBM8wRiX9aerVr0XhO.png",
     alt: "Blue calendar with a white checkmark",
   },
   {
     labelKey: "hardestAssets.feature3",
+    lottieSrc: "/lotties/hardest-assets-3.lottie",
     img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/NYV%20Vault%20Graphic%403x-v8RSGW6kMK9RHghX0vaNsxF3DJLJK6.png",
     alt: "Orange vault door with white X lock mechanism",
   },
   {
     labelKey: "hardestAssets.feature4",
+    lottieSrc: "/lotties/hardest-assets-4.lottie",
     img: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Redeemable%20for%20Physical%20Graphic%403x-ZpejIgx6gcKexo7ksAqWLrbE9o2b2u.png",
     alt: "Blue hand holding an orange card",
   },
@@ -70,11 +77,20 @@ function FeatureCard({
         }}
         whileHover={{ scale: 1.01, transition: { duration: 0.15, ease: "easeOut" } }}
       >
-        <img
-          src={feature.img}
-          alt={feature.alt}
-          className="h-full w-full object-contain"
-        />
+        {feature.lottieSrc ? (
+          <LottiePlayer
+            src={feature.lottieSrc}
+            loop
+            autoplay
+            className="h-full w-full"
+          />
+        ) : feature.img ? (
+          <img
+            src={feature.img}
+            alt={feature.alt}
+            className="h-full w-full object-contain"
+          />
+        ) : null}
       </motion.div>
       <span className="text-sm font-medium leading-snug text-[#1a1a2e]">
         {t(feature.labelKey)}
