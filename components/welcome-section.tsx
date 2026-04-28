@@ -7,15 +7,22 @@ import { useReveal, revealStyle } from "@/hooks/use-reveal"
 import { EXTERNAL_LINKS } from "@/lib/external-links"
 import { useTranslation } from "@/lib/i18n"
 import type { TranslationKey } from "@/lib/translations"
+import { LottieWithIntro } from "@/components/lottie-player"
 
 const cards: {
-  image: string
+  image?: string
+  /** Path to intro lottie animation (.json or .lottie - auto-detected) */
+  lottieIn?: string
+  /** Path to loop lottie animation (.json or .lottie - auto-detected) */
+  lottieLoop?: string
   titleKey: TranslationKey
   descriptionKey: TranslationKey
   ctaKey: TranslationKey
   href: string
 }[] = [
   {
+    lottieIn: "/lotties/welcome-card-1-in.lottie",
+    lottieLoop: "/lotties/welcome-card-1-loop.lottie",
     image: "/images/welcome-card-1.png",
     titleKey: "welcome.card1Title",
     descriptionKey: "welcome.card1Description",
@@ -23,6 +30,8 @@ const cards: {
     href: EXTERNAL_LINKS.app,
   },
   {
+    lottieIn: "/lotties/welcome-card-2-in.lottie",
+    lottieLoop: "/lotties/welcome-card-2-loop.lottie",
     image: "/images/welcome-card-2.png",
     titleKey: "welcome.card2Title",
     descriptionKey: "welcome.card2Description",
@@ -30,6 +39,7 @@ const cards: {
     href: EXTERNAL_LINKS.app,
   },
   {
+    lottieLoop: "/lotties/welcome-card-3-loop.lottie",
     image: "/images/welcome-card-3.png",
     titleKey: "welcome.card3Title",
     descriptionKey: "welcome.card3Description",
@@ -37,6 +47,7 @@ const cards: {
     href: EXTERNAL_LINKS.app,
   },
   {
+    lottieLoop: "/lotties/welcome-card-4-loop.lottie",
     image: "/images/welcome-card-4.png",
     titleKey: "welcome.card4Title",
     descriptionKey: "welcome.card4Description",
@@ -57,7 +68,7 @@ function WelcomeCard({ card, index, visible }: { card: typeof cards[number]; ind
       className="flex flex-col"
       style={revealStyle(visible, 150 + index * 50)}
     >
-      {/* Card Image Container */}
+      {/* Card Image/Lottie Container */}
       <motion.div
         className="mb-5 flex w-full items-center justify-center overflow-hidden rounded-2xl bg-[#324c93]"
         style={{ aspectRatio: "1.6 / 1", x: springX, y: springY }}
@@ -74,13 +85,21 @@ function WelcomeCard({ card, index, visible }: { card: typeof cards[number]; ind
         }}
         whileHover={{ scale: 1.01, transition: { duration: 0.15, ease: "easeOut" } }}
       >
-        <Image
-          src={card.image}
-          alt={t(card.titleKey)}
-          width={300}
-          height={188}
-          className="h-4/5 w-auto object-contain"
-        />
+        {(card.lottieIn || card.lottieLoop) ? (
+          <LottieWithIntro
+            introSrc={card.lottieIn}
+            loopSrc={card.lottieLoop}
+            className="h-4/5 w-auto"
+          />
+        ) : card.image ? (
+          <Image
+            src={card.image}
+            alt={t(card.titleKey)}
+            width={300}
+            height={188}
+            className="h-4/5 w-auto object-contain"
+          />
+        ) : null}
       </motion.div>
 
       {/* Card Content */}

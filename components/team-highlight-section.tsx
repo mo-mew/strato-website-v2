@@ -6,6 +6,10 @@ import { ArrowRight } from "lucide-react"
 import { motion, useMotionValue, useSpring } from "framer-motion"
 import { useReveal, revealStyle } from "@/hooks/use-reveal"
 import { useTranslation } from "@/lib/i18n"
+import { LottieWithIntro } from "@/components/lottie-player"
+
+const ETHEREUM_DNA_LOTTIE_IN = "/lotties/ethereum-dna-in.lottie"
+const ETHEREUM_DNA_LOTTIE_LOOP = "/lotties/ethereum-dna-loop.lottie"
 
 const teamMembers = [
   {
@@ -96,6 +100,44 @@ function TextBlock({ visible, className = "" }: { visible: boolean; className?: 
   )
 }
 
+/**
+ * Ethereum DNA Artwork - renders either a Lottie animation (intro + loop) or static image
+ */
+const LOTTIE_FADE_MASK =
+  "linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%)"
+
+function EthereumDnaArtwork() {
+  const maskStyle = {
+    maskImage: LOTTIE_FADE_MASK,
+    WebkitMaskImage: LOTTIE_FADE_MASK,
+  }
+
+  if (ETHEREUM_DNA_LOTTIE_IN || ETHEREUM_DNA_LOTTIE_LOOP) {
+    return (
+      <div className="absolute inset-0" style={maskStyle}>
+        <LottieWithIntro
+          introSrc={ETHEREUM_DNA_LOTTIE_IN}
+          loopSrc={ETHEREUM_DNA_LOTTIE_LOOP}
+          className="pointer-events-none h-full w-full"
+          style={{ position: "absolute", inset: 0 }}
+        />
+      </div>
+    )
+  }
+
+  return (
+    <div className="absolute inset-0" style={maskStyle}>
+      <Image
+        src="/images/ethereum-dna.png"
+        alt="Ethereum DNA"
+        fill
+        className="pointer-events-none object-contain"
+        priority
+      />
+    </div>
+  )
+}
+
 export function TeamHighlightSection() {
   const { ref, visible } = useReveal()
   const { t } = useTranslation()
@@ -116,13 +158,7 @@ export function TeamHighlightSection() {
               className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
               style={{ height: "130vh", aspectRatio: "8000 / 2262" }}
             >
-              <Image
-                src="/images/ethereum-dna.png"
-                alt="Ethereum DNA"
-                fill
-                className="pointer-events-none object-contain"
-                priority
-              />
+              <EthereumDnaArtwork />
             </div>
           </div>
 
@@ -174,13 +210,7 @@ export function TeamHighlightSection() {
                   className="absolute left-1/2 top-1/2 h-[400%] -translate-x-1/2 -translate-y-1/2"
                   style={{ aspectRatio: "8000 / 2262" }}
                 >
-                  <Image
-                    src="/images/ethereum-dna.png"
-                    alt="Ethereum DNA"
-                    fill
-                    className="pointer-events-none object-contain"
-                    priority
-                  />
+                  <EthereumDnaArtwork />
                 </div>
               </div>
             </div>
@@ -210,13 +240,7 @@ export function TeamHighlightSection() {
                 className="absolute left-1/2 top-1/2 h-[400%] -translate-x-1/2 -translate-y-1/2"
                 style={{ aspectRatio: "8000 / 2262" }}
               >
-                <Image
-                  src="/images/ethereum-dna.png"
-                  alt="Ethereum DNA"
-                  fill
-                  className="pointer-events-none object-contain"
-                  priority
-                />
+                <EthereumDnaArtwork />
               </div>
             </div>
           </div>
