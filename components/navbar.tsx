@@ -5,7 +5,7 @@ import { ChevronDown, ArrowRight, Menu, X } from "lucide-react"
 import Link from "next/link"
 import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu"
 import { cn } from "@/lib/utils"
-import { EXTERNAL_LINKS } from "@/lib/external-links"
+import { usePlatformUrl } from "@/lib/use-platform-url"
 import { useTranslation } from "@/lib/i18n"
 import { LanguageSwitcher } from "./language-switcher"
 import type { TranslationKey } from "@/lib/translations"
@@ -193,6 +193,8 @@ export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [isClosing, setIsClosing] = useState(false)
   const { t } = useTranslation()
+  const launchAppUrl = usePlatformUrl("nav-launch-app")
+  const launchAppMobileUrl = usePlatformUrl("nav-launch-app-mobile")
 
   const scrollPositionRef = useRef(0)
   const prevThemeColorRef = useRef<string | null>(null)
@@ -266,7 +268,7 @@ export function Navbar() {
         <div className="hidden items-center gap-2 md:flex">
           <LanguageSwitcher variant="light" />
           <a
-            href={EXTERNAL_LINKS.app}
+            href={launchAppUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full bg-white px-4 py-1.5 text-sm font-semibold text-[#243486] transition-colors hover:bg-white/90"
@@ -351,7 +353,7 @@ export function Navbar() {
 
             <div className="mt-auto pt-8">
               <a
-                href={EXTERNAL_LINKS.app}
+                href={launchAppMobileUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full rounded-full bg-[#243486] px-6 py-4 text-center text-lg font-semibold text-white transition-colors hover:bg-[#1a2761]"
