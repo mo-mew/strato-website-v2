@@ -5,7 +5,6 @@ import { ArrowRight } from "lucide-react"
 import { motion, useMotionValue, useSpring } from "framer-motion"
 import { useReveal, revealStyle } from "@/hooks/use-reveal"
 import { EXTERNAL_LINKS } from "@/lib/external-links"
-import { usePlatformUrl } from "@/lib/use-platform-url"
 import { useTranslation } from "@/lib/i18n"
 import type { TranslationKey } from "@/lib/translations"
 import { LottieWithIntro } from "@/components/lottie-player"
@@ -20,7 +19,6 @@ const cards: {
   descriptionKey: TranslationKey
   ctaKey: TranslationKey
   href: string
-  platformCta?: string
 }[] = [
   {
     lottieIn: "/lotties/welcome-card-1-in.lottie",
@@ -30,7 +28,6 @@ const cards: {
     descriptionKey: "welcome.card1Description",
     ctaKey: "welcome.card1Cta",
     href: EXTERNAL_LINKS.app,
-    platformCta: "welcome-card-1",
   },
   {
     lottieIn: "/lotties/welcome-card-2-in.lottie",
@@ -40,7 +37,6 @@ const cards: {
     descriptionKey: "welcome.card2Description",
     ctaKey: "welcome.card2Cta",
     href: EXTERNAL_LINKS.app,
-    platformCta: "welcome-card-2",
   },
   {
     lottieLoop: "/lotties/welcome-card-3-loop.lottie",
@@ -49,7 +45,6 @@ const cards: {
     descriptionKey: "welcome.card3Description",
     ctaKey: "welcome.card3Cta",
     href: EXTERNAL_LINKS.app,
-    platformCta: "welcome-card-3",
   },
   {
     lottieLoop: "/lotties/welcome-card-4-loop.lottie",
@@ -67,8 +62,6 @@ function WelcomeCard({ card, index, visible }: { card: typeof cards[number]; ind
   const springX = useSpring(mouseX, { stiffness: 150, damping: 30, mass: 1 })
   const springY = useSpring(mouseY, { stiffness: 150, damping: 30, mass: 1 })
   const { t } = useTranslation()
-  const platformUrl = usePlatformUrl(card.platformCta ?? "welcome-card", "/")
-  const href = card.platformCta ? platformUrl : card.href
 
   return (
     <div
@@ -117,7 +110,7 @@ function WelcomeCard({ card, index, visible }: { card: typeof cards[number]; ind
         {t(card.descriptionKey)}
       </p>
       <a
-        href={href}
+        href={card.href}
         target="_blank"
         rel="noopener noreferrer"
         className="group inline-flex items-center gap-1 text-sm font-medium text-white transition-colors hover:text-[#7dd3fc]"

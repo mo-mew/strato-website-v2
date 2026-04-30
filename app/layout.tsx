@@ -4,7 +4,6 @@ import { Analytics } from '@vercel/analytics/react'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import Script from 'next/script'
 import { Providers } from '@/components/providers'
-import { AttributionTracker } from '@/components/attribution-tracker'
 import './globals.css'
 
 const poppins = Poppins({
@@ -57,7 +56,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.variable} font-sans antialiased`}>
-        <AttributionTracker />
         <Providers>
           {children}
         </Providers>
