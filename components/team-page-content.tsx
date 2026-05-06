@@ -89,7 +89,6 @@ function FadeIn({
   )
 }
 
-// Social icon components
 function XIcon({ className }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="currentColor">
@@ -204,10 +203,7 @@ function MemberCard({ member }: { member: TeamMember }) {
       {member.links && (
         <div className="mt-3 flex items-center gap-2">
           {isValidLink(member.links.x) && (
-            <SocialButton
-              href={member.links.x!}
-              label={`${member.name} on X`}
-            >
+            <SocialButton href={member.links.x!} label={`${member.name} on X`}>
               <XIcon className="h-3.5 w-3.5" />
             </SocialButton>
           )}
@@ -302,10 +298,6 @@ function DepartmentSection({
 }
 
 function useIsMobile() {
-  // Initialize synchronously on the client so that on mobile we never
-  // briefly mount the desktop HorizontalTimeline (which would attach its
-  // window-level wheel/touch listeners). SSR safely returns false; the
-  // TimelineSection's `hydrated` gate prevents any hydration mismatch.
   const [isMobile, setIsMobile] = useState(() => {
     if (typeof window === "undefined") return false
     return window.matchMedia("(max-width: 767px)").matches
@@ -484,6 +476,7 @@ function HorizontalTimeline() {
   const [progress, setProgress] = useState(0)
   const progressRef = useRef(0)
   const isLockedRef = useRef(false)
+  const lockAnchorRef = useRef<"down" | "up" | null>(null)
   const touchStartYRef = useRef<number | null>(null)
 
   const total = timelineMilestones.length
@@ -493,10 +486,8 @@ function HorizontalTimeline() {
   const LOCK_SENSITIVITY = 0.001
   const RELEASE_EPSILON = 0.02
 
-  // Fraction of the viewport that defines each activation zone.
-  // Down-scroll locks when the wrapper center is in the BOTTOM third.
-  // Up-scroll locks when the wrapper center is in the TOP third.
   const ACTIVATION_ZONE_FRACTION = 1 / 3
+  const MIN_VISIBLE_PIXELS = 140
 
   useEffect(() => {
     progressRef.current = progress
@@ -507,41 +498,91 @@ function HorizontalTimeline() {
 
     if (!wrapper) return
 
-    const shouldActivate = (direction: number) => {
+    const releaseLock = () => {
+      isLockedRef.current = false
+      lockAnchorRef.current = null
+    }
+
+    const getViewportState = () => {
       const rect = wrapper.getBoundingClientRect()
       const viewportHeight = window.innerHeight
-      const wrapperCenterY = rect.top + rect.height / 2
+
+      const downActivationY =
+        viewportHeight * (1 - ACTIVATION_ZONE_FRACTION)
+      const upActivationY = viewportHeight * ACTIVATION_ZONE_FRACTION
+
+      const visiblePixels = Math.max(
+        0,
+        Math.min(rect.bottom, viewportHeight) - Math.max(rect.top, 0)
+      )
+
+      const requiredVisiblePixels = Math.min(
+        MIN_VISIBLE_PIXELS,
+        rect.height * 0.35
+      )
+
+      const isMeaningfullyVisible = visiblePixels >= requiredVisiblePixels
+
+      const crossesDownActivationLine =
+        rect.top <= downActivationY && rect.bottom >= downActivationY
+
+      const crossesUpActivationLine =
+        rect.top <= upActivationY && rect.bottom >= upActivationY
+
+      return {
+        isMeaningfullyVisible,
+        crossesDownActivationLine,
+        crossesUpActivationLine,
+      }
+    }
+
+    const getStartAnchor = (direction: number) => {
       const current = progressRef.current
+      const {
+        isMeaningfullyVisible,
+        crossesDownActivationLine,
+        crossesUpActivationLine,
+      } = getViewportState()
 
-      const inBottomZone =
-        wrapperCenterY >= viewportHeight * (1 - ACTIVATION_ZONE_FRACTION) &&
-        wrapperCenterY <= viewportHeight
+      if (!isMeaningfullyVisible) return null
 
-      const inTopZone =
-        wrapperCenterY >= 0 &&
-        wrapperCenterY <= viewportHeight * ACTIVATION_ZONE_FRACTION
-
-      // Scrolling down: only lock if we're entering the bottom third
-      // and the animation isn't already complete.
       if (
         direction > 0 &&
         current < 1 - RELEASE_EPSILON &&
-        inBottomZone
+        crossesDownActivationLine
       ) {
-        return true
+        return "down" as const
       }
 
-      // Scrolling up: only lock if we're entering the top third
-      // and the animation isn't already at the start.
       if (
         direction < 0 &&
         current > RELEASE_EPSILON &&
-        inTopZone
+        crossesUpActivationLine
       ) {
-        return true
+        return "up" as const
       }
 
-      return false
+      return null
+    }
+
+    const isCurrentLockStillValid = () => {
+      const anchor = lockAnchorRef.current
+
+      if (!anchor) return false
+
+      const {
+        isMeaningfullyVisible,
+        crossesDownActivationLine,
+        crossesUpActivationLine,
+      } = getViewportState()
+
+      if (!isMeaningfullyVisible) return false
+
+      if (anchor === "down") {
+        return crossesDownActivationLine
+      }
+
+      return crossesUpActivationLine
     }
 
     const stepProgress = (deltaY: number) => {
@@ -551,19 +592,23 @@ function HorizontalTimeline() {
 
       const current = progressRef.current
 
-      // Already locked: keep consuming events until we hit a release edge.
       if (isLockedRef.current) {
+        if (!isCurrentLockStillValid()) {
+          releaseLock()
+          return false
+        }
+
         if (direction > 0 && current >= 1 - RELEASE_EPSILON) {
           progressRef.current = 1
           setProgress(1)
-          isLockedRef.current = false
+          releaseLock()
           return false
         }
 
         if (direction < 0 && current <= RELEASE_EPSILON) {
           progressRef.current = 0
           setProgress(0)
-          isLockedRef.current = false
+          releaseLock()
           return false
         }
 
@@ -580,12 +625,14 @@ function HorizontalTimeline() {
         return true
       }
 
-      // Not locked: only enter the lock when we're in the right zone
-      // for this scroll direction.
-      if (!shouldActivate(direction)) return false
+      const startAnchor = getStartAnchor(direction)
+
+      if (!startAnchor) return false
 
       const next = Math.max(0, Math.min(1, current + deltaY * LOCK_SENSITIVITY))
+
       isLockedRef.current = true
+      lockAnchorRef.current = startAnchor
       progressRef.current = next
       setProgress(next)
 
@@ -623,6 +670,7 @@ function HorizontalTimeline() {
 
     const handleTouchEnd = () => {
       touchStartYRef.current = null
+      releaseLock()
     }
 
     window.addEventListener("wheel", handleWheel, { passive: false })
@@ -631,6 +679,7 @@ function HorizontalTimeline() {
     window.addEventListener("touchend", handleTouchEnd, { passive: true })
 
     return () => {
+      releaseLock()
       window.removeEventListener("wheel", handleWheel)
       window.removeEventListener("touchstart", handleTouchStart)
       window.removeEventListener("touchmove", handleTouchMove)
@@ -852,7 +901,6 @@ function HeroVideo() {
 export function TeamPageContent() {
   return (
     <div className="relative min-h-screen bg-[#f9f9f9]">
-      {/* Background artwork */}
       <div className="pointer-events-none fixed inset-0 overflow-hidden opacity-80">
         <img
           src="/background-artwork-mobile.svg"
@@ -866,15 +914,12 @@ export function TeamPageContent() {
         />
       </div>
 
-      {/* Content */}
       <div className="relative">
         <div className="mx-auto max-w-[1280px] px-4 md:px-8 lg:px-12">
-          {/* Navbar */}
           <FadeIn className="pt-4 md:pt-6 lg:pt-8" y={12}>
             <Navbar />
           </FadeIn>
 
-          {/* Hero Section */}
           <div className="mt-12 md:mt-16">
             <FadeIn delay={50}>
               <p className="text-sm font-bold uppercase tracking-widest text-[#4866f7] md:text-base">
@@ -893,7 +938,6 @@ export function TeamPageContent() {
               <HeroVideo />
             </FadeIn>
 
-            {/* Description text */}
             <FadeIn delay={200}>
               <p className="mt-8 text-sm leading-relaxed text-[#555] md:text-base">
                 Strato didn&apos;t start with a whitepaper and a token sale. It
@@ -908,12 +952,10 @@ export function TeamPageContent() {
           </div>
         </div>
 
-        {/* Timeline Section - full width */}
         <div className="mb-16 mt-16 md:mb-24 md:mt-24">
           <TimelineSection />
         </div>
 
-        {/* Team Sections */}
         <div className="mx-auto max-w-[1280px] px-4 md:px-8 lg:px-12">
           <div className="flex flex-col gap-20 pb-24">
             {departments.map((dept) => (
@@ -923,7 +965,6 @@ export function TeamPageContent() {
         </div>
       </div>
 
-      {/* Footer */}
       <FadeIn className="relative">
         <Footer />
       </FadeIn>
