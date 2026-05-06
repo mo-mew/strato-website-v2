@@ -146,7 +146,7 @@ function SocialButton({
   children: ReactNode
 }) {
   return (
-    <a
+    
       href={href}
       target="_blank"
       rel="noopener noreferrer"
@@ -302,7 +302,14 @@ function DepartmentSection({
 }
 
 function useIsMobile() {
-  const [isMobile, setIsMobile] = useState(false)
+  // Initialize synchronously on the client so that on mobile we never
+  // briefly mount the desktop HorizontalTimeline (which would attach its
+  // window-level wheel/touch listeners). SSR safely returns false; the
+  // TimelineSection's `hydrated` gate prevents any hydration mismatch.
+  const [isMobile, setIsMobile] = useState(() => {
+    if (typeof window === "undefined") return false
+    return window.matchMedia("(max-width: 767px)").matches
+  })
 
   useEffect(() => {
     const mq = window.matchMedia("(max-width: 767px)")
@@ -486,8 +493,10 @@ function HorizontalTimeline() {
   const LOCK_SENSITIVITY = 0.001
   const RELEASE_EPSILON = 0.02
 
-  const DOWN_ACTIVATION_Y = 2 / 3
-  const UP_ACTIVATION_Y = 1 / 3
+  // Fraction of the viewport that defines each activation zone.
+  // Down-scroll locks when the wrapper center is in the BOTTOM third.
+  // Up-scroll locks when the wrapper center is in the TOP third.
+  const ACTIVATION_ZONE_FRACTION = 1 / 3
 
   useEffect(() => {
     progressRef.current = progress
@@ -498,44 +507,36 @@ function HorizontalTimeline() {
 
     if (!wrapper) return
 
-    const isInActivationZone = (direction: number) => {
+    const shouldActivate = (direction: number) => {
       const rect = wrapper.getBoundingClientRect()
       const viewportHeight = window.innerHeight
-
       const wrapperCenterY = rect.top + rect.height / 2
-
-      const downTargetY = viewportHeight * DOWN_ACTIVATION_Y
-      const upTargetY = viewportHeight * UP_ACTIVATION_Y
-      const tolerance = Math.min(90, viewportHeight * 0.12)
-
       const current = progressRef.current
 
-      const isNearDownTarget = Math.abs(wrapperCenterY - downTargetY) <= tolerance
-      const isNearUpTarget = Math.abs(wrapperCenterY - upTargetY) <= tolerance
+      const inBottomZone =
+        wrapperCenterY >= viewportHeight * (1 - ACTIVATION_ZONE_FRACTION) &&
+        wrapperCenterY <= viewportHeight
 
-      const isBetweenActivationPoints =
-        wrapperCenterY >= upTargetY && wrapperCenterY <= downTargetY
+      const inTopZone =
+        wrapperCenterY >= 0 &&
+        wrapperCenterY <= viewportHeight * ACTIVATION_ZONE_FRACTION
 
-      if (direction > 0 && isNearDownTarget) {
-        return true
-      }
-
-      if (direction < 0 && isNearUpTarget) {
-        return true
-      }
-
+      // Scrolling down: only lock if we're entering the bottom third
+      // and the animation isn't already complete.
       if (
-        direction < 0 &&
-        current >= 1 - RELEASE_EPSILON &&
-        isBetweenActivationPoints
+        direction > 0 &&
+        current < 1 - RELEASE_EPSILON &&
+        inBottomZone
       ) {
         return true
       }
 
+      // Scrolling up: only lock if we're entering the top third
+      // and the animation isn't already at the start.
       if (
-        direction > 0 &&
-        current <= RELEASE_EPSILON &&
-        isBetweenActivationPoints
+        direction < 0 &&
+        current > RELEASE_EPSILON &&
+        inTopZone
       ) {
         return true
       }
@@ -548,35 +549,45 @@ function HorizontalTimeline() {
 
       if (direction === 0) return false
 
-      if (!isLockedRef.current && !isInActivationZone(direction)) {
-        return false
-      }
-
       const current = progressRef.current
+
+      // Already locked: keep consuming events until we hit a release edge.
+      if (isLockedRef.current) {
+        if (direction > 0 && current >= 1 - RELEASE_EPSILON) {
+          progressRef.current = 1
+          setProgress(1)
+          isLockedRef.current = false
+          return false
+        }
+
+        if (direction < 0 && current <= RELEASE_EPSILON) {
+          progressRef.current = 0
+          setProgress(0)
+          isLockedRef.current = false
+          return false
+        }
+
+        const next = Math.max(
+          0,
+          Math.min(1, current + deltaY * LOCK_SENSITIVITY)
+        )
+
+        if (next !== current) {
+          progressRef.current = next
+          setProgress(next)
+        }
+
+        return true
+      }
+
+      // Not locked: only enter the lock when we're in the right zone
+      // for this scroll direction.
+      if (!shouldActivate(direction)) return false
+
       const next = Math.max(0, Math.min(1, current + deltaY * LOCK_SENSITIVITY))
-
-      if (direction > 0 && current >= 1 - RELEASE_EPSILON) {
-        progressRef.current = 1
-        setProgress(1)
-        isLockedRef.current = false
-        return false
-      }
-
-      if (direction < 0 && current <= RELEASE_EPSILON) {
-        progressRef.current = 0
-        setProgress(0)
-        isLockedRef.current = false
-        return false
-      }
-
-      if (!isLockedRef.current) {
-        isLockedRef.current = true
-      }
-
-      if (next !== current) {
-        progressRef.current = next
-        setProgress(next)
-      }
+      isLockedRef.current = true
+      progressRef.current = next
+      setProgress(next)
 
       return true
     }
