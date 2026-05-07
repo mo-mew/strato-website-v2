@@ -136,7 +136,7 @@ function RewardsBadge() {
             className="inline-flex items-center gap-1.5 text-sm font-semibold transition-opacity hover:opacity-70"
             style={{ color: "#a4daff" }}
           >
-            Earn 2x Points <ArrowRight className="h-3.5 w-3.5" />
+            Start Earning <ArrowRight className="h-3.5 w-3.5" />
           </a>
         </div>
       </div>
