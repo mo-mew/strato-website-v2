@@ -20,9 +20,22 @@ Audio coming soon.
 
 ## Transcript
 
-<!-- TABLE_OF_CONTENTS -->
+**Contents**
 
-**[00:00] Mark Yusko:** Foreign.
+- [Introductions and BlockApps background](#introductions-and-blockapps-background)
+- [From enterprise blockchain to tokenized assets](#from-enterprise-blockchain-to-tokenized-assets)
+- [Online vs onchain assets](#online-vs-onchain-assets)
+- [Vaulting, tokenization, and ETF comparisons](#vaulting-tokenization-and-etf-comparisons)
+- [Defining HardFi](#defining-hardfi)
+- [Collectibles, NFTs, and digital property rights](#collectibles-nfts-and-digital-property-rights)
+- [Tokenized gold and collateralized liquidity](#tokenized-gold-and-collateralized-liquidity)
+- [Founder lessons and BlockApps history](#founder-lessons-and-blockapps-history)
+- [Health, AI, and inspiration](#health-ai-and-inspiration)
+- [STRATO token announcement and closing](#strato-token-announcement-and-closing)
+
+<a id="introductions-and-blockapps-background"></a>
+
+### Introductions and BlockApps background
 
 **[00:13] Xavier Segura:** Welcome to Digital Currents, brought to you by Morgan Creek Digital. I'm Xavier Segura. Each episode we spotlight the topics and people changing the tech industry with a focus on AI, blockchain, chips and big data. Thanks for listening and please make sure to subscribe if you like what you hear. And remember, stay current. Mark, we're in folks today. We have brought back one of our favorite founders, Kieren from now Blockapps Empowering STRATO, their amazing blockchain, which we'll go into in more depth. Mark, join me in welcoming Kieren.
 
@@ -46,6 +59,10 @@ Audio coming soon.
 
 **[03:05] Xavier Segura:** That's what we love about the show. Mark and I are not above using puns whenever possible. I think they can have a lot of meaning. So on that idea of rarity and of value, maybe speak a little bit, Kieren, about since the last time you were on the show, some of the growth that you've seen out of Blockapps and how that kind of mirrored a reflection of the market, but then also knowing where we're going.
 
+<a id="from-enterprise-blockchain-to-tokenized-assets"></a>
+
+### From enterprise blockchain to tokenized assets
+
 **[03:33] Kieren James-Lubin:** Okay, I'll give a little bit of historical context. We can go into it in more detail as we go. So we have a long background of putting hard assets, real world assets generally on chain. Going back to really the first real world asset project on Ethereum with BHP Billiton. That was kind of 2016, 2017 era. So already getting into the earth, minerals, etc. back then, before there was a name for NFTs and a bunch of people involved in that project went in their own directions, including us following in that particular market.
 
 So as things have matured, we went through the enterprise phase. And the enterprise blockchain market really has kind of ended in one form and transformed in another. And what's become enduring about it is it was really about the assets the whole time. There was a big infrastructure focus. You could think about the early stages of the cloud where people would say, all right, well you can run it in my data center. And a lot of that has been forgotten. What we're seeing now is that financialization is the demand. It started with pure native crypto assets. We wouldn't be here without Bitcoin, subsequently without Ethereum. But you realize that most of the world's value is off chain still.
@@ -59,6 +76,10 @@ Stablecoins have gotten huge, relatively speaking, well into the couple hundred 
 And so clearly the next wave is all of those assets that are in the world today that you haven't been able to get access to on chain. So we made a big bet on gold and silver, really informed by the market, right? Following our enterprise days, we had sort of an NFT flavor RWA offering, kind of like an OpenSea for RWAs in which we brought everything to market. Carbon offsets, tokenized whiskey barrels, collectible shoes, et cetera. But precious metals were actually the biggest volume, the biggest seller. And we kind of realized the demand for the asset on chain is roughly the same as the demand for the asset overall. Being on chain often brings some additional benefits like enhanced liquidity.
 
 And so why do you tokenize? Sometimes you want to sell the asset, but quite often you want DeFi style leverage, purchasing power against the asset as well. And so we're seeing that with our depositor base, folks who have small amounts to really large amounts, relatively speaking, in precious metals, mostly they want to hold it, they don't want to sell. And the assets are relatively inert most of the time. Gold is a very liquid asset if you're trying to go to a bullion bank and sell it for cash. Otherwise it's not so much, you got to move it. It's really a store of value asset, not a transacting asset anymore. Which is kind of strange given the very long human history of using gold, silver, sometimes copper.
+
+<a id="online-vs-onchain-assets"></a>
+
+### Online vs onchain assets
 
 **[08:04] Mark Yusko:** Let me pause you for a second and just back up one second because the words are important and you're living it. We are living it. Our clients are living it. But there's a whole bunch of people that aren't. And since I'm the old guy, I remember the days of offline, like literally where everything was physical, tangible, hard. Like gold was a Krugerrand, a little coin that you put in your hand or a bar and bearer asset. And the quarters I used to get and spend were made of silver. And even the money, because I predate 71, was written on it that you could exchange this for gold or silver. You got a silver certificate.
 
@@ -96,6 +117,10 @@ But you can with stables typically right. So they're getting to be stable credit
 
 **[18:00] Mark Yusko:** I mean, not yet. Maybe Willy Wonka and Mike TV will figure that out, but at least for now they can't. We can't transmogrify to take a Calvin and Hobbes reference them on truly on chain. So what is it that we have on chain?
 
+<a id="vaulting-tokenization-and-etf-comparisons"></a>
+
+### Vaulting, tokenization, and ETF comparisons
+
 **[18:20] Kieren James-Lubin:** So, okay, the ritual is important, right? So there's an intake process. Say you've got physical gold. We've got some number of insured partner vaults that do the intake. So you drop it off physically, you mail it, you arrange for a Brinks transport, and so on. They check it out, they assay it, they look at the proof of origin, etc. All checks out. You put 100 ounces of gold in, you get 100 tokens back, right? So there's a continuous audit process that says, the number of ounces of gold in the vault is larger than or equals the number of ounces on chain.
 
 So with a solid trust anchor, we're trying to be pragmatic, right? Like there's a flavor of bitcoin person or hardcore crypto asset only person that doesn't like this pattern. But what we're seeing just empirically is that stablecoins tokenized asset market cap on chain continues to go up independent of the adoption of the pure crypto assets, at least in terms of price level. Like there is independent demand for this asset type. So with that minimal trust anchor, if you believe the gold is in the vault, then you're able to trade it dematerialized in a way that lets you trade with someone, anyone on the planet without going and mailing them gold, right? It's like it is much easier, cheaper, safer to leave the gold more or less where it is. Hey, maybe you keep some for your mattress, but it is just much more liquid in a spendability and also credit form.
@@ -103,6 +128,10 @@ So with a solid trust anchor, we're trying to be pragmatic, right? Like there's 
 Once you've tokenized it, you could think of it as analogous to ETFs too. ETFs are on the order of 1 to 2% of the - GLD is pretty big, IAU. The ones like that, it's actually in a sense a stronger claim than the ETF. Like the ETF, they got management fees and all that, but you cannot typically redeem the shares for the gold. Or you tend not to be able to deposit physical gold either. If you're a bullion bank, you can take the bars, drop them off and get shares and get liquid that way. But for an average person, you typically cannot get direct entry into them.
 
 And so you see this a lot - there's a reason for this structure, but there's sort of like a little bit of a two tier system where the institutional players, they trade with each other at really low fees and there's a measure of gatekeeping that goes on to preserve the margin they get when dealing with externals, et cetera. So if you - again, I think tokenized assets are in some ways just strictly better than ETFs. Similar liquidity benefits. Sometimes more direct borrowing tends to be cheaper within DeFi than say like a brokerage margin loan. It's 24/7, et cetera.
+
+<a id="defining-hardfi"></a>
+
+### Defining HardFi
 
 **[21:32] Xavier Segura:** Now Kieren, you mentioned a pretty interesting thing about just that evolution of Blockapps and STRATO. Kind of going more on the B2B enterprise side and coming more onto the consumer. And I can't help but think about how that pattern is kind of mirroring what we're seeing in financial markets today. So maybe defining some terms before we talk about a topic that we had a nice conversation in the green room. We always say we wish we could record what happens prior to the podcast because it's always unfiltered in the room.
 
@@ -129,6 +158,10 @@ But that said, there are things that could happen either. And I never leave it o
 But then there's all this other stuff, which is, what about art and what about collectibles? I mean, God love all these kids whose moms are now tearing apart the house trying to find their Pokemon cards. Because the best performing asset in the last 10 years is not bitcoin, y'all, it is Pokemon cards. And it is crazy. It used to be collectible Porsches, right, because of the dentist wrap phenomenon. Dentist buys Porsche, wraps it around a tree, end of car. The ones that don't get bought by dentists live on, and there aren't very many. And Jerry Seinfeld will pay you whatever it takes to get rare Porsche. And so that was number one. But now Pokemon cards have exhausted that, because those cardboard cards that you open the pack, it's cool, you get the hit. And then they go in a drawer and some people put them in the sleeves and they look at them occasionally.
 
 But, I mean, God, as a stamp collector growing up because Pokemon cards didn't exist, I have in my house somewhere, I don't even know where it is, a giant collection of postage stamps. I probably do have some stamps that are worth a meaningful amount of fiat if I could find them and find a place to sell them. But there was a kid yesterday who found - his mom found his entire set of 1999 mint because he put them in sleeves, Pokemon cards. He's like missing two. That's a pretty valuable asset. So how do we put that on chain or things like that on chain?
+
+<a id="collectibles-nfts-and-digital-property-rights"></a>
+
+### Collectibles, NFTs, and digital property rights
 
 **[28:11] Kieren James-Lubin:** So I want to say, just to comment on those sort of things, we're in the AI era now, so it feels like pure digital anything is - there'll be a few.
 
@@ -182,6 +215,10 @@ But, I mean, God, as a stamp collector growing up because Pokemon cards didn't e
 
 **[34:16] Xavier Segura:** And if you look at the tokenized gold market, as you mentioned Kieren, it's a fractions of a percentage, right. At roughly 5.9 billion. But it is rapidly growing. And we're not saying that STRATO is the only place to buy tokenized gold. But there are some advantages that I think have been really interesting. The idea that you can have gold, you can be a gold holder but still have access to liquidity without selling. You can manage this. Diversified collateral positions rotate between crypto and commodities. And this could potentially generate yield from ultimately a non yield generating asset. Except for this year where it kind of went through the moon. But maybe speak a little bit about the advantages that you guys are positioned relative to the incumbents.
 
+<a id="tokenized-gold-and-collateralized-liquidity"></a>
+
+### Tokenized gold and collateralized liquidity
+
 **[35:02] Mark Yusko:** Yeah.
 
 **[35:03] Kieren James-Lubin:** So let's talk about it for a second. Why you would want to hold your gold is, Mark's kind of making the case. Like those Pokemon cards, you just hold them as long as you can and they like, why do they keep going up? And I think often the answer is like we are sure to print more dollars. We've got a lot of debt. We've got to refinance the debt. I think the world will continue to mostly transact, especially internationally in dollars for some time. But you're actually seeing a big rotation in central bank reserves where gold is larger now than dollars or - yes.
@@ -211,6 +248,10 @@ And it's really interesting that this has happened over and over and over throug
 But more importantly, there's a speech years ago, arguably it was Kurt Vonnegut. Turned out it wasn't. It was a Chicago Sun Times writer. It was called Wear Sunscreen. And it basically said, my advice is one, wear sunscreen and then a bunch of other things. And one thing he says is as you grow older, you'll recall that prices were reasonable when you were young. Like, oh, my God, exactly. And yet here we are at much higher prices. I mean, my first house right. We struggled to buy because we had a little windfall inheritance from when my great uncle passed. $10,000. And that was enough to buy a house that doesn't even push a down payment on a car now. Right. I mean, it's crazy.
 
 **[43:53] Xavier Segura:** Yeah. And I think maybe we've reached the point of the show where we can maybe go back in time, Kieren, because I remember when we had you on the last episode of Digital Currents and we did the lightning round, there were some interesting hot takes about kind of how the best blockchains or crypto are invisible. And this product is very much a visible one because we can kind of interact in a special way. So we kind of get to that fun part where we maybe get to see if some things have evolved since the last time. Not changed, but evolved. We can always change our mind when we have better data and information. So we'll turn it over to the fun part of the episode. The famous Mark Yusko lightning.
+
+<a id="founder-lessons-and-blockapps-history"></a>
+
+### Founder lessons and BlockApps history
 
 **[44:35] Mark Yusko:** Well, I don't want to ask the same question. So we're going to do lightning. I won't get my notes. We'll just do some things I would love to know about Kieren and about the company. So Kieren, you're a founder and a CEO. And what makes great founders? Like, and I know you're humble guys. You're gonna say, I don't know. But tell me, what do you think makes somebody able to be a founder and someone who likes to build things?
 
@@ -265,6 +306,10 @@ So like also, so I wasn't like, kind of like a philosophically fully like a main
 **[54:28] Mark Yusko:** Really important piece of advice. I talk about this all the time. Tim May, God rest his soul, he wrote the Crypto Anarchist Manifesto. He was original cypherpunk. And he wrote this thing 30 years before this all happened. Like predicted every single thing that was going to happen. It was, I mean it's crazy and it's only a few pages, but he wrote this thing and for 20 years from 1989. No, I'm sorry, for 30 years from 1989 when he wrote it till 2009. Didn't matter because he was a libertarian hermit that lived in the woods by himself, didn't interact with people. So you can have this great idea, but the segmenting yourself off to, oh, I only talk to libertarians and I only talk to cypherpunks. Like, okay, you're not going to change the world. Now his work did change the world and contributed along with others to what we all do now.
 
 But I love your point about look extreme, you're going to be off putting to people and they're not going to want to follow you. And in the worst case of extreme, it's where the term drink the Kool-Aid comes from. It ends badly. So I love that. All right, being cognizant of time. What do you do for fun?
+
+<a id="health-ai-and-inspiration"></a>
+
+### Health, AI, and inspiration
 
 **[55:47] Kieren James-Lubin:** I'm a master sprinter. I did indoor nationals last year. I didn't this year. I've been so busy, but I came in like seventh in the 60 meter in a small field.
 
@@ -339,6 +384,10 @@ Anyway, so fun stuff. And you talked about it, right? Two years early good. Ten 
 **[1:07:21] Mark Yusko:** And you know this, especially growing up in the family you did, you can judge the quality of an idea by the vehemence of the detractors, but also the quality. So when people like Warren Buffett and Jamie Dimon say you have a stupid idea, maybe there's something there. Just a thought.
 
 **[1:07:46] Xavier Segura:** Right, right. And of course, I think, Kieren, you may have been the first to say Newton as the person to meet, but that's perfectly in keeping with bringing all the way back to your original background in math and physics. So a perfectly on brand answer there. Maybe we wouldn't let you go without maybe any big news or update that you want to share with the audience listening.
+
+<a id="strato-token-announcement-and-closing"></a>
+
+### STRATO token announcement and closing
 
 **[1:08:11] Kieren James-Lubin:** Oh, yes, absolutely. So in the spirit of being early. So we, again, we've been running as a sort of a sovereign L1 chain for a couple of years now. And there are a bunch of aspects to that. For instance, you need a mechanism to meter the thing. So we actually have a native stablecoin. That's what you kind of pay the gas in for those in the know. But it isn't really all the way there until you get your equivalent of Bitcoin, of Ether, et cetera. What's the real native commodity at the center of the system that's not dollar pegged and so on.
 
