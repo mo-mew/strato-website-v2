@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react"
 import Link from "next/link"
+import { formatDisplayDate } from "@/lib/date-format"
 import { teamMembers } from "@/lib/team-data"
 
 type ContentEmbedCardProps = {
@@ -30,14 +31,7 @@ function isLocalVideoSource(value: string): boolean {
 
 function formatDate(value?: string): string | null {
   if (!value) return null
-  const parsed = new Date(value)
-  if (Number.isNaN(parsed.getTime())) return value
-
-  return parsed.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  })
+  return formatDisplayDate(value)
 }
 
 export function ContentEmbedCard({
