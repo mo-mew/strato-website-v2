@@ -9,6 +9,7 @@ import { Footer } from "@/components/footer"
 import { JsonLd } from "@/components/json-ld"
 import { ContentEmbedCard } from "@/components/content-embed-card"
 import { TwitterEmbedLoader } from "@/components/twitter-embed-loader"
+import { formatDisplayDate } from "@/lib/date-format"
 import { isGhostConfigured } from "@/lib/ghost-client"
 import { preprocessMarkdownEmbeds } from "@/lib/markdown-embeds"
 import { getAllPosts, getPostBySlug } from "@/lib/posts"
@@ -154,13 +155,7 @@ export default async function BlogPostPage({
                 </>
               )}
               <span className="text-[#c4c8d4]">|</span>
-              <time>
-                {new Date(post.date).toLocaleDateString("en-US", {
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric",
-                })}
-              </time>
+              <time dateTime={post.date}>{formatDisplayDate(post.date)}</time>
             </div>
           </div>
 

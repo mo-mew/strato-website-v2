@@ -9,6 +9,7 @@ import { Footer } from "@/components/footer"
 import { JsonLd } from "@/components/json-ld"
 import { ContentEmbedCard } from "@/components/content-embed-card"
 import { TwitterEmbedLoader } from "@/components/twitter-embed-loader"
+import { formatDisplayDate } from "@/lib/date-format"
 import { getLocalVideoPostBySlug, getLocalVideoPosts } from "@/lib/local-video-posts"
 import { articleJsonLd, videoObjectJsonLd, breadcrumbJsonLd } from "@/lib/seo"
 
@@ -119,13 +120,7 @@ export default async function VideoPostPage({
                 </>
               )}
               <span className="text-[#c4c8d4]">|</span>
-              <time>
-                {new Date(post.date).toLocaleDateString("en-US", {
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric",
-                })}
-              </time>
+              <time dateTime={post.date}>{formatDisplayDate(post.date)}</time>
             </div>
           </div>
 
