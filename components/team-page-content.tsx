@@ -667,7 +667,7 @@ export function TeamPageContent() {
 
           <div className="mt-12 md:mt-16">
             <FadeIn delay={50}>
-              <p className="text-sm font-bold uppercase tracking-widest text-[#4866f7] md:text-base">
+              <p className="text-sm font-semibold uppercase tracking-wider text-[#4866f7]">
                 SHIPPING ETHEREUM INFRASTRUCTURE SINCE 2014
               </p>
             </FadeIn>

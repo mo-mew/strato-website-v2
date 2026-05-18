@@ -83,6 +83,75 @@ const CAROUSEL_CARDS = [
 
 // ─── Hero Section ─────────────────────────────────────────────────────────────
 
+function HeroVideo() {
+  const videoRef = useRef<HTMLVideoElement>(null)
+  const [videoReady, setVideoReady] = useState(false)
+  const playAttemptedRef = useRef(false)
+
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video) return
+
+    video.muted = true
+    video.defaultMuted = true
+    video.playsInline = true
+    video.setAttribute("muted", "")
+    video.setAttribute("playsinline", "")
+    video.setAttribute("webkit-playsinline", "")
+
+    const tryPlay = () => {
+      if (playAttemptedRef.current) return
+      playAttemptedRef.current = true
+
+      const promise = video.play()
+      if (promise && typeof promise.catch === "function") {
+        promise.catch(() => {
+          playAttemptedRef.current = false
+        })
+      }
+    }
+
+    if (video.readyState >= 2) {
+      tryPlay()
+    } else {
+      video.addEventListener("loadeddata", tryPlay, { once: true })
+      video.addEventListener("canplay", tryPlay, { once: true })
+    }
+
+    return () => {
+      video.removeEventListener("loadeddata", tryPlay)
+      video.removeEventListener("canplay", tryPlay)
+    }
+  }, [])
+
+  return (
+    <div className="mt-8 overflow-hidden rounded-2xl bg-[#1a1a2e]">
+      <div className="relative aspect-video w-full">
+        {!videoReady && (
+          <div className="absolute inset-0 bg-black/10 backdrop-blur-[1px]" />
+        )}
+        <video
+          ref={videoRef}
+          className="relative h-full w-full object-cover transition-opacity duration-700 ease-out"
+          style={{ opacity: videoReady ? 1 : 0 }}
+          controls
+          autoPlay
+          muted
+          defaultMuted
+          loop
+          playsInline
+          preload="auto"
+          onLoadedData={() => setVideoReady(true)}
+          onCanPlay={() => setVideoReady(true)}
+        >
+          <source src="/get-started/hero-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  )
+}
+
 function HeroSection() {
   const { ref, visible } = useReveal()
 
@@ -98,7 +167,8 @@ function HeroSection() {
           <h1 className="mt-4 max-w-5xl text-balance text-4xl font-bold leading-tight tracking-tight text-[#243486] md:text-5xl lg:text-6xl">
             The easiest way to enable gold and silver to work for you
           </h1>
-          <p className="mt-6 max-w-4xl text-xl font-medium text-[#1a1a2e]/80">
+          <HeroVideo />
+          <p className="mt-8 text-sm leading-relaxed text-[#555] md:text-base">
             STRATO is the one-stop shop to manage a balanced DeFi portfolio across gold, silver, and stocks.
           </p>
         </div>
